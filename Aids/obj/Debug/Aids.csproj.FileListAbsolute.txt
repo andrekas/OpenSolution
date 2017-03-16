@@ -1,0 +1,4 @@
+C:\Users\Andre\Desktop\Open\Aids\bin\Debug\Open.Aids.dll
+C:\Users\Andre\Desktop\Open\Aids\bin\Debug\Open.Aids.pdb
+C:\Users\Andre\Desktop\Open\Aids\obj\Debug\Open.Aids.dll
+C:\Users\Andre\Desktop\Open\Aids\obj\Debug\Open.Aids.pdb

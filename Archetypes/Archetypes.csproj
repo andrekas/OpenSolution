@@ -62,7 +62,16 @@
     <Compile Include="InventoryClasses\Inventory.cs" />
     <Compile Include="MoneyClasses\Money.cs" />
     <Compile Include="OrderClasses\Order.cs" />
+    <Compile Include="PartyClasses\BodyMetric.cs" />
+    <Compile Include="PartyClasses\BodyMetrics.cs" />
+    <Compile Include="PartyClasses\Ethnicities.cs" />
+    <Compile Include="PartyClasses\Ethnicity.cs" />
+    <Compile Include="PartyClasses\ISOGender.cs" />
     <Compile Include="PartyClasses\Party.cs" />
+    <Compile Include="PartyClasses\Person.cs" />
+    <Compile Include="PartyClasses\PersonName.cs" />
+    <Compile Include="PartyClasses\PersonNames.cs" />
+    <Compile Include="PartyClasses\Persons.cs" />
     <Compile Include="ProcessClasses\Process.cs" />
     <Compile Include="ProductClasses\CanceledService.cs" />
     <Compile Include="ProductClasses\CompletedService.cs" />

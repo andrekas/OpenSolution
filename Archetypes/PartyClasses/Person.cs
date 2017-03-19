@@ -1,9 +1,10 @@
-﻿using RoleAndParty.Aids;
-using System;
+﻿using System;
+using Open.Archetypes.BaseClasses;
+using Open.Archetypes.PartyClasses;
 
-namespace RoleAndParty.Classes
+namespace Open.Archetypes.PartyClasses
 {
-    public class Person
+    public class Person: Archetype
     {
         private string name;
         private PersonName personName;

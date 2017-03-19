@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Open.Archetypes.BaseClasses;
+using Open.Archetypes.PartyClasses;
 
-namespace RoleAndParty.Classes
+namespace Open.Archetypes.PartyClasses
 {
     public class PersonNames: Archetypes<PersonName>
     {

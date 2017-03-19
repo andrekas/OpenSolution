@@ -1,6 +1,9 @@
-﻿namespace RoleAndParty.Classes
+﻿using Open.Archetypes.BaseClasses;
+
+namespace Open.Archetypes.PartyClasses
 {
-    public class BodyMetric
+    public class BodyMetric: Archetype
+
     {
     }
 }

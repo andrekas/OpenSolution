@@ -55,6 +55,7 @@
     <Compile Include="GetRandom.cs" />
     <Compile Include="Safe.cs" />
     <Compile Include="GetString.cs" />
+    <Compile Include="Str.cs" />
     <Compile Include="UseCulture.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="ValueChangedEventArgs.cs" />

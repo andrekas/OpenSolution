@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.PerformanceData;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Open.Archetypes.BaseClasses;
 
-namespace RoleAndParty.Classes
+
+namespace Open.Archetypes.PartyClasses
 {
     public class Ethnicities : Archetypes<Ethnicity>
     {

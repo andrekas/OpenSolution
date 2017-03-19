@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RoleAndParty.Aids;
+using Open.Aids;
+using Open.Archetypes.BaseClasses;
 
-namespace RoleAndParty.Classes
+
+namespace Open.Archetypes.PartyClasses
 {
-    public class PersonName: Archetype
+    public class PersonName: TemporalEntity
     {
         private string prefix;
         private string givenName;

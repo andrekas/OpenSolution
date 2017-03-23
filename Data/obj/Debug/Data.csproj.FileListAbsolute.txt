@@ -16,3 +16,12 @@ C:\Users\Asus\Documents\GitHubProject\OpenSolution\Data\bin\Debug\Open.Archetype
 C:\Users\Asus\Documents\GitHubProject\OpenSolution\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Asus\Documents\GitHubProject\OpenSolution\Data\obj\Debug\Open.Data.dll
 C:\Users\Asus\Documents\GitHubProject\OpenSolution\Data\obj\Debug\Open.Data.pdb
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Data.dll
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Data.pdb
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Aids.dll
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Archetypes.dll
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Aids.pdb
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Archetypes.pdb
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\obj\Debug\Open.Data.dll
+C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\obj\Debug\Open.Data.pdb

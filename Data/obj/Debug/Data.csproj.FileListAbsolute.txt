@@ -7,12 +7,3 @@ C:\Users\Andre\Desktop\Open\Data\bin\Debug\Open.Archetypes.pdb
 C:\Users\Andre\Desktop\Open\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Andre\Desktop\Open\Data\obj\Debug\Open.Data.dll
 C:\Users\Andre\Desktop\Open\Data\obj\Debug\Open.Data.pdb
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Data.dll
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Data.pdb
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Aids.dll
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Archetypes.dll
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Aids.pdb
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\bin\Debug\Open.Archetypes.pdb
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\obj\Debug\Open.Data.dll
-C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Data\obj\Debug\Open.Data.pdb

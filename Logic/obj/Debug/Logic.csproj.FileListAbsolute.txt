@@ -9,3 +9,14 @@ C:\Users\Andre\Desktop\Open\Logic\bin\Debug\Open.Data.pdb
 C:\Users\Andre\Desktop\Open\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
 C:\Users\Andre\Desktop\Open\Logic\obj\Debug\Open.Logic.dll
 C:\Users\Andre\Desktop\Open\Logic\obj\Debug\Open.Logic.pdb
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Logic.dll
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Logic.pdb
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Aids.dll
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Archetypes.dll
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Data.dll
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Aids.pdb
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Archetypes.pdb
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\bin\Debug\Open.Data.pdb
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\obj\Debug\Open.Logic.dll
+C:\Users\Asus\Documents\GitHubProject\OpenSolution\Logic\obj\Debug\Open.Logic.pdb

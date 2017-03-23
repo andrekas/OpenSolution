@@ -90,6 +90,14 @@
     <Compile Include="Archetypes\InventoryClasses\InventoryTests.cs" />
     <Compile Include="Archetypes\MoneyClasses\MoneyTests.cs" />
     <Compile Include="Archetypes\OrderClasses\OrderTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\BodyMetricsTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\BodyMetricTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\EmailAddressesTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\EmailAddressTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\EthnicitiesTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\EthnicityTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\GeograficAddressesTests.cs" />
+    <Compile Include="Archetypes\PartyClasses\GeographicAddressTests.cs" />
     <Compile Include="Archetypes\PartyClasses\PartyTests.cs" />
     <Compile Include="Archetypes\ProcessClasses\ProcessTests.cs" />
     <Compile Include="Archetypes\ProductClasses\ProductTests.cs" />

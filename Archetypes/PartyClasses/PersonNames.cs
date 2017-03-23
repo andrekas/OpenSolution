@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Open.Archetypes.BaseClasses;
-using Open.Archetypes.PartyClasses;
 
 namespace Open.Archetypes.PartyClasses
 {

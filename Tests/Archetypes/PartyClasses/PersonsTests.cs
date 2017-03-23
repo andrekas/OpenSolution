@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace XPProject.Tests
+﻿namespace Open.Tests.Archetypes.PartyClasses
 {
-    class PersonsTests
+    public class PersonsTests
     {
     }
 }

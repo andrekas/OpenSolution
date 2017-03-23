@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RoleAndParty.Classes;
+using Open.Archetypes.PartyClasses;
 
-namespace XPProject.Tests
+namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
     public class PersonTests

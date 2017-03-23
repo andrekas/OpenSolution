@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RoleAndParty.Classes;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Archetypes.PartyClasses;
 
-namespace XPProject.Tests
+
+namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
     public class PersonNamesTests

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Runtime.InteropServices;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Open.Archetypes.PartyClasses;
 
 
@@ -7,6 +8,20 @@ namespace Open.Tests.Archetypes.PartyClasses
     [TestClass]
     public class PersonNamesTests
     {
+        //private PersonName p;
+
+        //[TestInitialize]
+        //public void Init()
+        //{
+        //    p = new PersonName();
+        //}
+
+        //[TestCleanup]
+        //public void Cleanup()
+        //{
+        //    p = null;
+        //}
+
         [TestMethod]
         public void Sampletest()
         {
@@ -19,7 +34,12 @@ namespace Open.Tests.Archetypes.PartyClasses
             Assert.AreEqual(2, PersonNames.Instances.Count);
             var personName = PersonNames.GetGivenName("fakeGivenNameTwo");
             Assert.AreEqual(fakePersonNameTwo, personName);
-
         }
     }
 }
+
+
+
+
+
+

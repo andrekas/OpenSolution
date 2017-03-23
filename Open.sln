@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Resources\ReSharperOptions.DotSettings = Resources\ReSharperOptions.DotSettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft", "Soft\Soft.csproj", "{DE77A446-FA32-4C2F-B38D-85442037476B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft", "Soft\Soft.csproj", "{3335C3CF-4B98-4035-86E9-287DED2D6FD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +46,10 @@ Global
 		{1339F9E9-C749-44DB-A5B1-17041AC0E7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1339F9E9-C749-44DB-A5B1-17041AC0E7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1339F9E9-C749-44DB-A5B1-17041AC0E7B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE77A446-FA32-4C2F-B38D-85442037476B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE77A446-FA32-4C2F-B38D-85442037476B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE77A446-FA32-4C2F-B38D-85442037476B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE77A446-FA32-4C2F-B38D-85442037476B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3335C3CF-4B98-4035-86E9-287DED2D6FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3335C3CF-4B98-4035-86E9-287DED2D6FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3335C3CF-4B98-4035-86E9-287DED2D6FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3335C3CF-4B98-4035-86E9-287DED2D6FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

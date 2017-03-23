@@ -1,6 +1,6 @@
 ﻿namespace Open.Tests.Archetypes.PartyClasses
 {
-    class BodyMetricsTests
+    public class BodyMetricsTests
     {
     }
 }

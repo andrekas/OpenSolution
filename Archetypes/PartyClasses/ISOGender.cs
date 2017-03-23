@@ -1,6 +1,4 @@
-﻿using Open.Archetypes.BaseClasses;
-
-namespace Open.Archetypes.PartyClasses
+﻿namespace Open.Archetypes.PartyClasses
 {
     public enum ISOGender
     {

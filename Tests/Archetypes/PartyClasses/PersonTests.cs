@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RoleAndParty.Classes;
+using Open.Archetypes.PartyClasses;
 
-namespace XPProject.Tests
+namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
     public class PersonTests
@@ -69,84 +69,94 @@ namespace XPProject.Tests
             Assert.IsNotNull(typeof(Persons));
         }
 
-        [TestMethod]
-        public void PrefixTest()
-        {
-            var fakePrefix = new PersonName();
-            fakePrefix.Prefix = "aa";
-            p.PersonName = fakePrefix;
-            Assert.AreEqual(fakePrefix, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.Prefix);
-        }
+        //[TestMethod]
+        //public void PrefixTest()
+        //{
+        //    var fakePrefix = new PersonName();
+        //    fakePrefix.Prefix = "aa";
+        //    p.PersonName = fakePrefix;
+        //    Assert.AreEqual(fakePrefix, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.Prefix);
+        //}
 
-        [TestMethod]
-        public void GivenNameTest()
-        {
-            var fakeGivenName = new PersonName();
-            fakeGivenName.GivenName = "aa";
-            p.PersonName = fakeGivenName;
-            Assert.AreEqual(fakeGivenName, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.GivenName);
-        }
+        //[TestMethod]
+        //public void GivenNameTest()
+        //{
+        //    var fakeGivenName = new PersonName();
+        //    fakeGivenName.GivenName = "aa";
+        //    p.PersonName = fakeGivenName;
+        //    Assert.AreEqual(fakeGivenName, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.GivenName);
+        //}
 
-        [TestMethod]
-        public void MiddleNameTest()
-        {
-            var fakePersonName = new PersonName();
-            fakePersonName.MiddleName = "aa";
-            p.PersonName = fakePersonName;
-            Assert.AreEqual(fakePersonName, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.MiddleName);
-        }
+        //[TestMethod]
+        //public void MiddleNameTest()
+        //{
+        //    var fakePersonName = new PersonName();
+        //    fakePersonName.MiddleName = "aa";
+        //    p.PersonName = fakePersonName;
+        //    Assert.AreEqual(fakePersonName, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.MiddleName);
+        //}
 
-        [TestMethod]
-        public void FamilyNameTest()
-        {
-            var fakeFamilyName = new PersonName();
-            fakeFamilyName.FamilyName = "aa";
-            p.PersonName = fakeFamilyName;
-            Assert.AreEqual(fakeFamilyName, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.FamilyName);
-        }
+        //[TestMethod]
+        //public void FamilyNameTest()
+        //{
+        //    var fakeFamilyName = new PersonName();
+        //    fakeFamilyName.FamilyName = "aa";
+        //    p.PersonName = fakeFamilyName;
+        //    Assert.AreEqual(fakeFamilyName, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.FamilyName);
+        //}
 
-        [TestMethod]
-        public void PrefferedNameTest()
-        {
-            var fakePrefferedName = new PersonName();
-            fakePrefferedName.PrefferedName = "aa";
-            p.PersonName = fakePrefferedName;
-            Assert.AreEqual(fakePrefferedName, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.PrefferedName);
-        }
+        //[TestMethod]
+        //public void PrefferedNameTest()
+        //{
+        //    var fakePrefferedName = new PersonName();
+        //    fakePrefferedName.PrefferedName = "aa";
+        //    p.PersonName = fakePrefferedName;
+        //    Assert.AreEqual(fakePrefferedName, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.PrefferedName);
+        //}
 
-        [TestMethod]
-        public void SuffixTest()
-        {
-            var fakeSuffix = new PersonName();
-            fakeSuffix.Suffix = "aa";
-            p.PersonName = fakeSuffix;
-            Assert.AreEqual(fakeSuffix, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.Suffix);
-        }
+        //[TestMethod]
+        //public void SuffixTest()
+        //{
+        //    var fakeSuffix = new PersonName();
+        //    fakeSuffix.Suffix = "aa";
+        //    p.PersonName = fakeSuffix;
+        //    Assert.AreEqual(fakeSuffix, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.Suffix);
+        //}
 
-        [TestMethod]
-        public void UseTest()
-        {
-            var fakeUse = new PersonName();
-            fakeUse.Use = "aa";
-            p.PersonName = fakeUse;
-            Assert.AreEqual(fakeUse, p.PersonName);
-            Assert.AreEqual("aa", p.PersonName.Use);
-        }
+        //[TestMethod]
+        //public void UseTest()
+        //{
+        //    var fakeUse = new PersonName();
+        //    fakeUse.Use = "aa";
+        //    p.PersonName = fakeUse;
+        //    Assert.AreEqual(fakeUse, p.PersonName);
+        //    Assert.AreEqual("aa", p.PersonName.Use);
+        //}
 
-        [TestMethod]
-        public void ValidFromDateTest()
-        {
-            var fakeDate = new PersonName();
-            fakeDate.ValidFrom = new DateTime(2015);
-            p.PersonName = fakeDate;
-            Assert.AreEqual(fakeDate.ValidFrom, p.PersonName.ValidFrom);
-        }
+        //[TestMethod]
+        //public void ValidFromDateTest()
+        //{
+        //    var fakeDate = new PersonName();
+        //    fakeDate.ValidFrom = new DateTime(2015);
+        //    p.PersonName = fakeDate;
+        //    Assert.AreEqual(fakeDate.ValidFrom, p.PersonName.ValidFrom);
+        //}
+
+        //[TestMethod]
+        //public void ValidToDateTest()
+        //{
+        //    var fakeDate = new PersonName();
+        //    fakeDate.ValidTo = new DateTime(2015);
+        //    p.PersonName = fakeDate;
+        //    Assert.AreEqual(fakeDate.ValidTo, p.PersonName.ValidTo);
+        //}
+
 
         //[TestMethod]
         //public void ValidToDateTest()

@@ -1,6 +1,5 @@
 ﻿using System;
 using Open.Archetypes.BaseClasses;
-using Open.Archetypes.PartyClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
@@ -26,13 +25,6 @@ namespace Open.Archetypes.PartyClasses
             get { return ethnicity; }
             set { ethnicity = value; }
         }
-
-
-        //public DateTime DateOfBirth
-        //{
-        //    get { return DateOfBirth; }
-        //    set { DateOfBirth = value; }
-        //}
 
         public DateTime DateOfBirth
         {

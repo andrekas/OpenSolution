@@ -172,10 +172,10 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void EthnisityNameTest()
         {
             var fakeEthnicityName = new Ethnicity();
-            fakeEthnicityName.Name = "aa";
+            fakeEthnicityName.EthnicityName = "aa";
             p.Ethnicity = fakeEthnicityName;
             Assert.AreEqual(fakeEthnicityName, p.Ethnicity);
-            Assert.AreEqual("aa", p.Ethnicity.Name);
+            Assert.AreEqual("aa", p.Ethnicity.EthnicityName);
         }
 
 

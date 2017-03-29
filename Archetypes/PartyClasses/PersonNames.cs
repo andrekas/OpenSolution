@@ -38,7 +38,7 @@ namespace Open.Archetypes.PartyClasses
             return Instances.ToList().Find(x => x.Use == use);
         }
 
-        public static PersonName GetPreffix(string prefix)
+        public static PersonName GetPrefix(string prefix)
         {
             return Instances.ToList().Find(x => x.Prefix == prefix);
         }

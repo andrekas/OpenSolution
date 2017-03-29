@@ -8,22 +8,28 @@ namespace Open.Tests.Archetypes.PartyClasses
     [TestClass]
     public class PersonNamesTests
     {
-        //private PersonName p;
+        private PersonNames p;
 
-        //[TestInitialize]
-        //public void Init()
-        //{
-        //    p = new PersonName();
-        //}
+        [TestInitialize]
+        public void Init()
+        {
+            p = new PersonNames();
+        }
 
-        //[TestCleanup]
-        //public void Cleanup()
-        //{
-        //    p = null;
-        //}
+        [TestCleanup]
+        public void Cleanup()
+        {
+            p = null;
+        }
 
         [TestMethod]
-        public void Sampletest()
+        public void ConstructorTest()
+        {
+
+            Assert.IsNotNull(p);
+        }
+        [TestMethod]
+        public void GivenNametest()
         {
             var fakePersonNameOne = new PersonName();
             fakePersonNameOne.GivenName = "fakeGivenNameOne";
@@ -35,6 +41,21 @@ namespace Open.Tests.Archetypes.PartyClasses
             var personName = PersonNames.GetGivenName("fakeGivenNameTwo");
             Assert.AreEqual(fakePersonNameTwo, personName);
         }
+
+
+        //[TestMethod]
+        //public void PrefixTest()
+        //{
+        //    var fakePersonNameOne = new PersonName();
+        //    fakePersonNameOne.Prefix = "fakePrefixOne";
+        //    var fakePersonNameTwo = new PersonName();
+        //    fakePersonNameTwo.Prefix = "fakePrefixTwo";
+        //    PersonNames.Instances.Add(fakePersonNameOne);
+        //    PersonNames.Instances.Add(fakePersonNameTwo);
+        //    Assert.AreEqual(2, PersonNames.Instances.Count);
+        //    var personName = PersonNames.GetPrefix("fakePrefixTwo");
+        //    Assert.AreEqual(fakePersonNameTwo, personName);
+        //}
     }
 }
 

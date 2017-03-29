@@ -7,13 +7,13 @@ namespace Open.Archetypes.PartyClasses
     public class Ethnicity: Archetype
 
     {
-    private string name;
+    private string ethnicityName;
     private string description;
 
-    public string Name
+    public string EthnicityName
     {
-        get { return Str.EmptyIfNull(name); }
-        set { name = value; }
+        get { return Str.EmptyIfNull(ethnicityName); }
+        set { ethnicityName = value; }
     }
 
     public string Description

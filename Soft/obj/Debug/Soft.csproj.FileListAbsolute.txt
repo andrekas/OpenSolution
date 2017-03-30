@@ -94,3 +94,6 @@ C:\Users\Andre\Source\Repos\OpenSolution\Soft\bin\Microsoft.AI.Web.xml
 C:\Users\Andre\Source\Repos\OpenSolution\Soft\obj\Debug\Soft.csprojResolveAssemblyReference.cache
 C:\Users\Andre\Source\Repos\OpenSolution\Soft\obj\Debug\Soft.dll
 C:\Users\Andre\Source\Repos\OpenSolution\Soft\obj\Debug\Soft.pdb
+C:\Users\Andre\Source\Repos\OpenSolution\Soft\obj\Debug\Soft.Migrations.InitialCreate.resources
+C:\Users\Andre\Source\Repos\OpenSolution\Soft\obj\Debug\Soft.csproj.GenerateResource.Cache
+C:\Users\Andre\Source\Repos\OpenSolution\Soft\obj\Debug\Soft.Migrations.updatedatabaseverbose.resources

@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Entity.cd" />
+    <None Include="PartyClasses\PartyClassesDiagram.cd" />
     <None Include="Period.cd" />
     <None Include="ProductClasses\ServiceStates.cd" />
     <None Include="Roles.cd" />

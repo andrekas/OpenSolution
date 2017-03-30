@@ -5,6 +5,11 @@ namespace Open.Archetypes.PartyClasses
 {
     public class Persons : Archetypes<Person>
     {
-        public Persons Instances { get; } = new Persons();
+        public static Persons Instances { get; } = new Persons();
+
+        public static Person FindPersonById(string id)
+        {
+            return Instances.Find(x => x.UniqueId == id);
+        }
     }
 }

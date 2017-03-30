@@ -12,3 +12,7 @@ C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Aids\bin\Deb
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Aids\obj\Debug\Aids.csprojResolveAssemblyReference.cache
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Aids\obj\Debug\Open.Aids.dll
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Aids\obj\Debug\Open.Aids.pdb
+C:\Users\Andre\Source\Repos\OpenSolution\Aids\bin\Debug\Open.Aids.dll
+C:\Users\Andre\Source\Repos\OpenSolution\Aids\bin\Debug\Open.Aids.pdb
+C:\Users\Andre\Source\Repos\OpenSolution\Aids\obj\Debug\Open.Aids.dll
+C:\Users\Andre\Source\Repos\OpenSolution\Aids\obj\Debug\Open.Aids.pdb

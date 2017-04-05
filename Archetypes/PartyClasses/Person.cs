@@ -22,22 +22,22 @@ namespace Open.Archetypes.PartyClasses
             get { return PersonNames.FindPersonNameById(UniqueId); }
         }
 
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
+        //public string Name
+        //{
+        //    get { return name; }
+        //    set { name = value; }
+        //}
 
         public Ethnicity Ethnicity
         {
-            get { return ethnicity; }
-            set { ethnicity = value; }
+            get { return SetDefault(ref ethnicity); }
+            set { SetValue(ref ethnicity, value); }
         }
 
         public ISOGender Gender
         {
-            get { return gender; }
-            set { gender = value; }
+            get { return SetDefault(ref gender); }
+            set { SetValue(ref gender, value); }
         }
 
         public BodyMetric BodyMetric

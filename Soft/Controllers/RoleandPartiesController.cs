@@ -42,7 +42,7 @@ namespace Soft.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,GivenName,LastName,Gender")] RoleandParty roleandParty)
+        public ActionResult Create([Bind(Include = "ID,GivenName,LastName,Gender, Address")] RoleandParty roleandParty)
         {
             if (ModelState.IsValid)
             {
@@ -74,7 +74,7 @@ namespace Soft.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,GivenName,LastName,Gender")] RoleandParty roleandParty)
+        public ActionResult Edit([Bind(Include = "ID,GivenName,LastName,Gender, Address")] RoleandParty roleandParty)
         {
             if (ModelState.IsValid)
             {

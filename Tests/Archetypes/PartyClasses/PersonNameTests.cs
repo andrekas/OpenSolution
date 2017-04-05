@@ -57,10 +57,11 @@ namespace Open.Tests.Archetypes.PartyClasses
             [TestMethod]
             public void IsNotNullTest()
             {
-                Assert.IsNotNull(typeof(Persons));
+                Assert.IsNotNull(typeof(People));
             }
 
-            [TestMethod]
+
+        [TestMethod]
             public void PrefixTest()
             {
                 var fakePrefix = new PersonName();

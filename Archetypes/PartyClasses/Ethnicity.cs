@@ -1,5 +1,4 @@
-﻿using Open.Aids;
-using Open.Archetypes.BaseClasses;
+﻿using Open.Archetypes.BaseClasses;
 
 
 namespace Open.Archetypes.PartyClasses
@@ -12,14 +11,21 @@ namespace Open.Archetypes.PartyClasses
 
     public string EthnicityName
     {
-        get { return Str.EmptyIfNull(ethnicityName); }
-        set { ethnicityName = value; }
-    }
+            get { return SetDefault(ref ethnicityName); }
+            set { SetValue(ref ethnicityName, value); }
+        }
 
     public string Description
     {
-        get { return Str.EmptyIfNull(description); }
-        set { description = value; }
-    }
+            get { return SetDefault(ref description); }
+            set { SetValue(ref description, value); }
+        }
+
+        public static Ethnicity Random()
+        {
+            var e = new Ethnicity();
+            e.SetRandomValues();
+            return e;
+        }
     }
 }

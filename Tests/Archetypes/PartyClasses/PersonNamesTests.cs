@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Aids;
+using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
 
 
@@ -24,12 +27,20 @@ namespace Open.Tests.Archetypes.PartyClasses
             p = null;
         }
 
+        //[TestMethod]
+        //public void ConstructorTest()
+        //{
+
+        //    Assert.IsNotNull(p);
+        //}
+
         [TestMethod]
         public void ConstructorTest()
         {
-
-            Assert.IsNotNull(p);
+            Assert.AreEqual(Obj.GetType().BaseType, typeof(PersonName));
+            Assert.IsInstanceOfType(Obj, typeof(IList<string>));
         }
+
         [TestMethod]
         public void GivenNametest()
         {

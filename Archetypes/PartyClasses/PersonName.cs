@@ -25,7 +25,7 @@ namespace Open.Archetypes.PartyClasses
         }
         public Person Person
         {
-            get { return Persons.FindPersonById(Id); }
+            get { return People.FindPersonById(Id); }
         }
         public string Prefix
         {

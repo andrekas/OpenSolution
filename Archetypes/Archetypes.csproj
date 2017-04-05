@@ -62,6 +62,8 @@
     <Compile Include="InventoryClasses\Inventory.cs" />
     <Compile Include="MoneyClasses\Money.cs" />
     <Compile Include="OrderClasses\Order.cs" />
+    <Compile Include="PartyClasses\Address.cs" />
+    <Compile Include="PartyClasses\Addresses.cs" />
     <Compile Include="PartyClasses\BodyMetric.cs" />
     <Compile Include="PartyClasses\BodyMetrics.cs" />
     <Compile Include="PartyClasses\EmailAddress.cs" />
@@ -74,10 +76,14 @@
     <Compile Include="PartyClasses\Organisation.cs" />
     <Compile Include="PartyClasses\OrganisationType.cs" />
     <Compile Include="PartyClasses\Party.cs" />
+    <Compile Include="PartyClasses\PartyAuthentication.cs" />
+    <Compile Include="PartyClasses\PartyAuthentications.cs" />
+    <Compile Include="PartyClasses\PartySignature.cs" />
+    <Compile Include="PartyClasses\PartySignatures.cs" />
     <Compile Include="PartyClasses\Person.cs" />
     <Compile Include="PartyClasses\PersonName.cs" />
     <Compile Include="PartyClasses\PersonNames.cs" />
-    <Compile Include="PartyClasses\Persons.cs" />
+    <Compile Include="PartyClasses\People.cs" />
     <Compile Include="PartyClasses\RelationshipType.cs" />
     <Compile Include="PartyClasses\RelationshipTypes.cs" />
     <Compile Include="PartyClasses\TelecomAddress.cs" />

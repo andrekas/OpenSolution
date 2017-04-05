@@ -29,15 +29,15 @@ namespace Open.Tests.Archetypes.PartyClasses
             Assert.IsNotNull(p);
         }
         
-        [TestMethod]
-        public void NameTests()
-        {
-            var fakeValue = "some kind of Name";
+        //[TestMethod]
+        //public void NameTests()
+        //{
+        //    var fakeValue = "some kind of Name";
 
-            p.Name = fakeValue;
-            Assert.AreEqual(fakeValue, p.Name);
-            Assert.AreEqual(typeof(string), p.Name.GetType());
-        }
+        //    p.Name = fakeValue;
+        //    Assert.AreEqual(fakeValue, p.Name);
+        //    Assert.AreEqual(typeof(string), p.Name.GetType());
+        //}
 
 
         //[TestMethod]
@@ -66,7 +66,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(Persons));
+            Assert.IsNotNull(typeof(People));
         }
 
         //[TestMethod]

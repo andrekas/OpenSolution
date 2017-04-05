@@ -1,9 +1,8 @@
-﻿using Open.Aids;
-using Open.Archetypes.BaseClasses;
+﻿using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class GeographicAddress: Archetype
+    public class GeographicAddress: TemporalEntity
 
     {
     private string addressLines;
@@ -12,36 +11,41 @@ namespace Open.Archetypes.PartyClasses
     private string regionOrState;
     private string zipOrPostcode;
 
-    public string AddressLines
-    {
-        get { return Str.EmptyIfNull(addressLines); }
-        set { addressLines = value; }
-    }
+        public string AddressLines
+        {
+            get { return SetDefault(ref addressLines); }
+            set { SetValue(ref addressLines, value); }
+        }
 
-    public string City
-    {
-        get { return Str.EmptyIfNull(city); }
-        set { city = value; }
-    }
+        public string City
+        {
+            get { return SetDefault(ref city); }
+            set { SetValue(ref city, value); }
+        }
 
-    public string Country
+        public string Country
+        {
+            get { return SetDefault(ref country); }
+            set { SetValue(ref country, value); }
+        }
+        public string RegionOrState
     {
-        get { return Str.EmptyIfNull(country); }
-        set { country = value; }
-    }
-
-    public string RegionOrState
-    {
-        get { return Str.EmptyIfNull(regionOrState); }
-        set { regionOrState = value; }
-    }
+            get { return SetDefault(ref regionOrState); }
+            set { SetValue(ref regionOrState, value); }
+        }
 
     public string ZipOrPostcode
     {
-        get { return Str.EmptyIfNull(zipOrPostcode); }
-        set { zipOrPostcode = value; }
-    }
+            get { return SetDefault(ref zipOrPostcode); }
+            set { SetValue(ref zipOrPostcode, value); }
+        }
 
+        public static GeographicAddress Random()
+        {
+            var e = new GeographicAddress();
+            e.SetRandomValues();
+            return e;
+        }
 
     }
 }

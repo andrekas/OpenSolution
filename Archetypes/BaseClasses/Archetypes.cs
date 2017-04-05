@@ -7,6 +7,7 @@ namespace Open.Archetypes.BaseClasses {
     public class Archetypes<T> : Archetype, IList<T> {
         protected internal readonly List<T> list = new List<T>();
         protected bool isAddReange;
+        protected internal bool isSet;
         public Archetypes() : this(null) { }
         public Archetypes(IEnumerable<T> elements) {
             if (IsNull(elements)) return;

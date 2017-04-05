@@ -1,7 +1,10 @@
 ﻿using System;
+using Open.Aids;
 namespace Open.Archetypes.RuleClasses {
     public class StringVariable : Variable<string> {
-        public new static StringVariable Empty { get; } = new StringVariable();
+        public StringVariable() : this(string.Empty) { }
+        public StringVariable(string name, string value = null) : base(name, value ?? string.Empty) { }
+        public new static StringVariable Empty { get; } = new StringVariable { IsReadOnly = true };
         public override string Value {
             get { return SetDefault(ref valueField); }
             set { SetValue(ref valueField, value); }
@@ -32,7 +35,7 @@ namespace Open.Archetypes.RuleClasses {
         }
         protected override void SetRandomValues() {
             base.SetRandomValues();
-            valueField = Aids.GetRandom.String();
+            valueField = GetRandom.String();
         }
     }
 }

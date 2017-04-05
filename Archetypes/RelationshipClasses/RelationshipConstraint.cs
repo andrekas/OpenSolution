@@ -24,7 +24,7 @@ namespace Open.Archetypes.RelationshipClasses
             set { SetValue(ref relationshipTypeId, value);}
         }
         public RelationshipType RelationshipType => RelationshipTypes.Find(RelationshipTypeId);
-        public static RelationshipConstraint Random() {
+        public new static RelationshipConstraint Random() {
             var r = new RelationshipConstraint();
             r.SetRandomValues();
             return r;

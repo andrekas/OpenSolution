@@ -14,11 +14,13 @@ namespace Open.Aids {
         public static string Namespace(Type type) {
             return Utils.IsNull(type) ? string.Empty : type.Namespace;
         }
-        public static List<MemberInfo> Members(Type type, BindingFlags f = GetPublic.All, bool clean = true ) {
+        public static List<MemberInfo> Members(Type type, BindingFlags f = GetPublic.All, 
+            bool clean = true ) {
             var l = Safe.Run(() => type.GetMembers(f).ToList(), new List<MemberInfo>());
             if (clean) RemoveSurrogates(l);
             return l;
         }
+        
         internal static void RemoveSurrogates(IList<MemberInfo> l) {
             for (var i = l.Count; i > 0; i--) {
                 var m = l[i - 1];

@@ -18,7 +18,7 @@ namespace Open.Archetypes.RoleClasses {
             => EntityTypes.Find(ValidPerformerTypeId);
         public virtual RoleType RoleType
             => RoleTypes.Find(RoleTypeId);
-        public static RoleConstraint Random() {
+        public new static RoleConstraint Random() {
             var c = new RoleConstraint();
             c.SetRandomValues();
             return c;

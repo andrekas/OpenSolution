@@ -3,8 +3,11 @@ using System.Diagnostics;
 using Open.Aids;
 namespace Open.Archetypes.BaseClasses {
     public abstract class Archetype : Common {
+        protected bool IsChanged;
+        protected internal bool IsReadOnly;
         public event EventHandler<ValueChangedEventArgs> OnChanged;
         public void SetValue<T>(ref T variable, T value) {
+            if (IsReadOnly) return;
             if (IsNull(value)) return;
             if (value.Equals(variable)) return;
             var old = variable;
@@ -18,6 +21,10 @@ namespace Open.Archetypes.BaseClasses {
             if (value.Equals(def)) return;
             if (!IsNull(variable) && !variable.Equals(def)) return;
             SetValue(ref variable, value);
+        }
+        private void DoOnChanged(ValueChangedEventArgs args){
+            IsChanged = true;
+            OnChanged?.Invoke(this, args);
         }
         protected void DoOnChanged<T>(T oldValue, T newValue) {
             if (OnChanged == null) return;

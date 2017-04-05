@@ -1,18 +1,28 @@
 ﻿using System;
+using Open.Aids;
 namespace Open.Archetypes.RuleClasses {
     public class Operand : RuleElement {
+        public const int Equal = 0;
+        public const int Greater = 1;
+        public const int Less = -1;
         public Operand() : this(string.Empty) { }
         public Operand(string name) : base(name) { }
         public static Operand Empty { get; } = new Operand();
         public override bool IsEmpty() { return Equals(Empty); }
         public override bool IsOperand() { return true; }
-        public static Operand Random() {
+        public new static Operand Random() {
             var x = new Operand();
             x.SetRandomValues();
             return x;
         }
         public static Operand ToVariable(string name, object value) {
-            return new StringVariable {Name = name, Value = value.ToString()};
+            if (value is double) return ToVariable(name, (double) value);
+            if (value is int) return ToVariable(name, (int)value);
+            if (value is decimal) return ToVariable(name, (decimal)value);
+            if (value is DateTime) return ToVariable(name, (DateTime)value);
+            if (value is bool) return ToVariable(name, (bool)value);
+            if (value is string) return ToVariable(name, (string)value);
+            return ToVariable(name, value.ToString());
         }
         public static Operand ToVariable(string name, int value) {
             return new IntegerVariable {Name = name, Value = value};
@@ -33,7 +43,7 @@ namespace Open.Archetypes.RuleClasses {
             return new DoubleVariable {Name = name, Value = value};
         }
         public static Operand GetRandomInherited() {
-            var i = Aids.GetRandom.Int32()%6;
+            var i = GetRandom.Int32() % 6;
             switch (i) {
                 case 1:
                     return BooleanVariable.Random();

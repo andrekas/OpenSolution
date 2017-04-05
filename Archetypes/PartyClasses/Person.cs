@@ -3,14 +3,15 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class Person: BaseEntity<Party>
+    public class Person : BaseEntity<Party>
     {
         private string name;
         private string personNameId;
         private ISOGender gender;
         private Ethnicity ethnicity;
-        private BodyMetric bodyMetric;
+       private BodyMetric bodyMetric;
         private DateTime dateOfBirth;
+
         public string PersonNameId
         {
             get { return SetDefault(ref personNameId); }
@@ -40,6 +41,7 @@ namespace Open.Archetypes.PartyClasses
             set { SetValue(ref gender, value); }
         }
 
+
         public BodyMetric BodyMetric
         {
             get { return SetDefault(ref bodyMetric); }
@@ -55,19 +57,26 @@ namespace Open.Archetypes.PartyClasses
 
         public override Party Type { get; }
 
-        //public static DateTime MinDateOfBirth => new DateTime(1900, 1, 1);
-        //public static DateTime MaxDateOfBirth => new DateTime(2100, 1, 1);
-        //private DateTime dateOfBirth = MinDateOfBirth;
+        public static Person Random()
+        {
+            var e = new Person();
+            e.SetRandomValues();
+            return e;
 
-        //public DateTime DateOfBirth
-        //{
-        //    get { return dateOfBirth; }
-        //    set
-        //    {
-        //        if (value < MinDateOfBirth) return;
-        //        if (value > MaxDateOfBirth) return;
-        //        dateOfBirth = value;
-        //    }
-        //}
+            //public static DateTime MinDateOfBirth => new DateTime(1900, 1, 1);
+            //public static DateTime MaxDateOfBirth => new DateTime(2100, 1, 1);
+            //private DateTime dateOfBirth = MinDateOfBirth;
+
+            //public DateTime DateOfBirth
+            //{
+            //    get { return dateOfBirth; }
+            //    set
+            //    {
+            //        if (value < MinDateOfBirth) return;
+            //        if (value > MaxDateOfBirth) return;
+            //        dateOfBirth = value;
+            //    }
+            //}
+        }
     }
 }

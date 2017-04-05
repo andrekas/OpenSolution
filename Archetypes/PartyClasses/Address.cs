@@ -7,7 +7,7 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class Address: BaseEntity<Party>
+    public class Address : BaseEntity<Party>
 
     {
         private DateTime validFrom;
@@ -21,6 +21,11 @@ namespace Open.Archetypes.PartyClasses
         {
             get { return Addresses.FindPersonAddressById(UniqueId); }
         }
+
+        //public GeographicAddress GeographicAddress
+        //{
+        //    get { return SetDefault(ref geographicAddress); }
+        //}
 
         public GeographicAddress GeographicAddress
         {
@@ -57,6 +62,14 @@ namespace Open.Archetypes.PartyClasses
             get { return SetDefault(ref validTo); }
             set { SetValue(ref validTo, value); }
         }
+
         public override Party Type { get; }
+
+        public static Address Random()
+        {
+            var e = new Address();
+            e.SetRandomValues();
+            return e;
+        }
     }
 }

@@ -21,8 +21,7 @@ namespace Open.Aids {
                 return a.Select(t => t.FullName).ToList();
             }, new List<string>());
         }
-        public static string Name => 
-            Safe.Run(() => {
+        public static string Name => Safe.Run(() => {
                 var n = GetClass.Namespace(typeof(GetSolution));
                 return GetString.Head(n, '.');
             }, string.Empty);

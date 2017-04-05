@@ -1,10 +1,9 @@
 ﻿using System;
+using Open.Aids;
 namespace Open.Archetypes.BaseClasses {
     public class Period : Interval<DateTime> {
-        public static DateTime MinValue { get; } =
-            DateTime.MinValue.ToUniversalTime();
-        public static DateTime MaxValue { get; } =
-            DateTime.MaxValue.ToUniversalTime();
+        public static DateTime MinValue { get; } = DateTime.MinValue.ToUniversalTime();
+        public static DateTime MaxValue { get; } = DateTime.MaxValue.ToUniversalTime();
         public Period() {
             fromField = MinValue;
             toField = MaxValue;
@@ -26,10 +25,14 @@ namespace Open.Archetypes.BaseClasses {
             d.SetRandomValues();
             return d;
         }
-        protected override void SetRandomValues() {
+        protected override void SetRandomValues()
+        {
             base.SetRandomValues();
-            fromField = Aids.GetRandom.DateTime();
-            toField = Aids.GetRandom.DateTime(fromField);
+            var d2 = DateTime.Now;
+            var years = -GetRandom.UInt8(10, 100);
+            var d1 = d2.AddDays(years);
+            fromField = GetRandom.DateTime(d1, d2);
+            toField = DateTime.MaxValue;
         }
     }
 }

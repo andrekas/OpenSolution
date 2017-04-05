@@ -1,6 +1,5 @@
 ﻿using Open.Aids;
 using Open.Archetypes.BaseClasses;
-
 namespace Open.Archetypes.RelationshipClasses {
     public class Relationships : Archetypes<Relationship> {
         public static Relationships Instance { get; } = new Relationships();

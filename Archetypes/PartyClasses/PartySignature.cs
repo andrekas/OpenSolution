@@ -1,11 +1,8 @@
 ﻿using System;
 using Open.Aids;
 using Open.Archetypes.BaseClasses;
-
-namespace Open.Archetypes.PartyClasses
-{
-    public class PartySignature : UniqueEntity
-    {
+namespace Open.Archetypes.PartyClasses {
+    public class PartySignature : UniqueEntity {
         private string partyId;
         private PartyAuthentication authentication;
         private string resolution;

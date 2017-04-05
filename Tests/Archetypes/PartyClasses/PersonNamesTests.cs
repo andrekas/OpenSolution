@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Open.Aids;
-using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
 
 
@@ -41,19 +37,6 @@ namespace Open.Tests.Archetypes.PartyClasses
             Assert.IsInstanceOfType(Obj, typeof(IList<string>));
         }
 
-        [TestMethod]
-        public void GivenNametest()
-        {
-            var fakePersonNameOne = new PersonName();
-            fakePersonNameOne.GivenName = "fakeGivenNameOne";
-            var fakePersonNameTwo = new PersonName();
-            fakePersonNameTwo.GivenName = "fakeGivenNameTwo";
-            PersonNames.Instances.Add(fakePersonNameOne);
-            PersonNames.Instances.Add(fakePersonNameTwo);
-            Assert.AreEqual(2, PersonNames.Instances.Count);
-            //var personName = PersonNames.GetGivenName("fakeGivenNameTwo");
-            //Assert.AreEqual(fakePersonNameTwo, personName);
-        }
 
         protected override PersonNames GetRandomObj()
         {
@@ -63,6 +46,20 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void InstanceTest()
         {
             TestSingleton(() => PersonNames.Instances);
+        }
+
+        [TestMethod]
+        public void Nametest()
+        {
+            var fakePersonNameOne = new PersonName();
+            fakePersonNameOne.GivenName = "fakeGivenNameOne";
+            var fakePersonNameTwo = new PersonName();
+            fakePersonNameTwo.GivenName = "fakeGivenNameTwo";
+            PersonNames.Instances.Add(fakePersonNameOne);
+            PersonNames.Instances.Add(fakePersonNameTwo);
+            Assert.AreEqual(2, PersonNames.Instances.Count);
+            //var personName = PersonNames.GetName("fakeGivenNameTwo");
+            //Assert.AreEqual(fakePersonNameTwo, personName);
         }
 
 

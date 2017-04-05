@@ -38,17 +38,17 @@ namespace Open.Tests.Archetypes.PartyClasses
             Assert.AreEqual(2, GeographicAddresses.Instances.Count);
         }
        
-        [TestMethod]
-        public void AddressLinesTest()
-        {
-            var fakeGeograficAddressOne = new GeographicAddress();
-            fakeGeograficAddressOne.AddressLines = "fakeGeograficAddressLinesOne";
-            var fakeGeograficAddressTwo = new GeographicAddress();
-            fakeGeograficAddressOne.AddressLines = "fakeGeograficAddressLinesTwo";
-            var addressLines = GeographicAddresses.GetAddressLines("fakeGeograficAddressLinesTwo");
-            Assert.AreEqual(fakeGeograficAddressTwo, addressLines);
+        //[TestMethod]
+        //public void AddressLinesTest()
+        //{
+        //    var fakeGeograficAddressOne = new GeographicAddress();
+        //    fakeGeograficAddressOne.AddressLines = "fakeGeograficAddressLinesOne";
+        //    var fakeGeograficAddressTwo = new GeographicAddress();
+        //    fakeGeograficAddressOne.AddressLines = "fakeGeograficAddressLinesTwo";
+        //    var addressLines = GeographicAddresses.GetAddressLines("fakeGeograficAddressLinesTwo");
+        //    Assert.AreEqual(fakeGeograficAddressTwo, addressLines);
 
-        }
+        //}
 
         //[TestMethod]
         //public void GeograficAddressesTest()

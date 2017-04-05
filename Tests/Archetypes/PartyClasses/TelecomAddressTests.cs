@@ -1,7 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RoleAndParty.Classes;
+using Open.Archetypes.PartyClasses;
 
-namespace RoleAndParty.Tests
+
+namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
     public class TelecomAddressTests
@@ -73,5 +74,7 @@ namespace RoleAndParty.Tests
         {
             Assert.IsNotNull(typeof(TelecomAddresses));
         }
+
+
     }
 }

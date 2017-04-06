@@ -1,6 +1,6 @@
 ﻿namespace Open.Tests.Archetypes.PartyClasses
 {
-    public class PersonsTests
+    public class PeopleTests
     {
     }
 }

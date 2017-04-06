@@ -18,12 +18,6 @@ namespace Open.Archetypes.PartyClasses
             get { return PersonNames.GetPersonNames(UniqueId); }
         }
 
-        //public string Name
-        //{
-        //    get { return name; }
-        //    set { name = value; }
-        //}
-
         public Ethnicity Ethnicity
         {
             get { return SetDefault(ref ethnicity); }
@@ -57,21 +51,6 @@ namespace Open.Archetypes.PartyClasses
             var e = new Person();
             e.SetRandomValues();
             return e;
-
-            //public static DateTime MinDateOfBirth => new DateTime(1900, 1, 1);
-            //public static DateTime MaxDateOfBirth => new DateTime(2100, 1, 1);
-            //private DateTime dateOfBirth = MinDateOfBirth;
-
-            //public DateTime DateOfBirth
-            //{
-            //    get { return dateOfBirth; }
-            //    set
-            //    {
-            //        if (value < MinDateOfBirth) return;
-            //        if (value > MaxDateOfBirth) return;
-            //        dateOfBirth = value;
-            //    }
-            //}
         }
     }
 }

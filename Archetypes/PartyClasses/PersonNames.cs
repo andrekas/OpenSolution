@@ -2,17 +2,26 @@
 using System.Linq;
 using Open.Aids;
 using Open.Archetypes.BaseClasses;
+using Open.Archetypes.RoleClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
     public class PersonNames: Archetypes<PersonName>
     {
-        public static PersonNames Instances { get; } = new PersonNames();
+        public static PersonNames Instance { get; } = new PersonNames();
 
-        public static PersonName FindPersonNameById(string id)
+        public static PersonNames GetPersonNames(string uniqueId)
         {
-            return Instances.Find(x => x.Id == id);
+            var r = new PersonNames();
+            var l = Instance.FindAll(x => x.PersonId == uniqueId);
+            r.AddRange(l);
+            return r;
         }
+
+        //public static PersonName FindPersonNameById(string id)
+        //{
+        //    return Instances.Find(x => x.PersonId == id);
+        //}
         //public static PersonName GetGivenName(string name)
         //{
         //    return Instances.Find(x => x.GivenName == name);

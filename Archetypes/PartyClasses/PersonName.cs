@@ -16,16 +16,16 @@ namespace Open.Archetypes.PartyClasses
         private string prefferedName;
         private string suffix;
         private string use;
-        private DateTime validFrom;
-        private DateTime validTo;
-        public string Id
+        //private DateTime validFrom;
+        //private DateTime validTo;
+        public string PersonId
         {
             get { return SetDefault(ref id); }
             set { SetValue(ref id, value); }
         }
         public Person Person
         {
-            get { return People.FindPersonById(Id); }
+            get { return People.FindPersonById(PersonId); }
         }
         public string Prefix
         {
@@ -66,16 +66,16 @@ namespace Open.Archetypes.PartyClasses
             set { SetValue(ref use, value); }
         }
 
-        public DateTime ValidFrom
-        {
-            get { return SetDefault(ref validFrom); }
-            set { SetValue(ref validFrom, value); }
-        }
-        public DateTime ValidTo
-        {
-            get { return SetDefault(ref validTo); }
-            set { SetValue(ref validTo, value); }
-        }
+        //public DateTime ValidFrom
+        //{
+        //    get { return SetDefault(ref validFrom); }
+        //    set { SetValue(ref validFrom, value); }
+        //}
+        //public DateTime ValidTo
+        //{
+        //    get { return SetDefault(ref validTo); }
+        //    set { SetValue(ref validTo, value); }
+        //}
         public static PersonName Random()
         {
             var e = new PersonName();

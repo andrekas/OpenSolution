@@ -1,36 +1,40 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Aids;
+using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
+using Open.Archetypes.RoleClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
 {
 
     [TestClass]
-    public class PersonNameTests : PropertyTests
+    public class PersonNameTests : CommonTests<PersonName>
 
     {
-
-        private PersonName p;
-
-        [TestInitialize]
-        public void Init()
+        protected override PersonName GetRandomObj()
         {
-            p = new PersonName();
+            return PersonName.Random();
         }
 
-        [TestCleanup]
-        public void Cleanup()
+        [TestInitialize]
+        public override void TestInitialize()
         {
-            p = null;
+            base.TestInitialize();
+        }
+        [TestCleanup]
+        public override void TestCleanup()
+        {
+            base.TestCleanup();
+
         }
 
         [TestMethod]
         public void ConstructorTest()
         {
-
-            Assert.IsNotNull(p);
+            var a = new PersonName().GetType().BaseType;
+            Assert.AreEqual(a, typeof(TemporalEntity));
         }
-
         [TestMethod]
         public void IsNotNullTest()
         {
@@ -40,7 +44,6 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void PrefixTest()
         {
-            var Obj = new PersonName();
             TestProperty(() => Obj.Prefix, x => Obj.Prefix = x);
 
         }
@@ -48,7 +51,6 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void GivenNameTest()
         {
-            var Obj = new PersonName();
             TestProperty(() => Obj.GivenName, x => Obj.GivenName = x);
 
         }
@@ -70,7 +72,6 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void PrefferedNameTest()
         {
-            var Obj = new PersonName();
             TestProperty(() => Obj.PrefferedName, x => Obj.PrefferedName = x);
 
         }
@@ -86,7 +87,6 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void UseTest()
         {
-            var Obj = new PersonName();
             TestProperty(() => Obj.Use, x => Obj.Use = x);
 
         }
@@ -94,18 +94,19 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void ValidFromTest()
         {
-            var Obj = new PersonName();
-            TestProperty(() => Obj.ValidFrom, x => Obj.ValidFrom = x);
+            
+            TestProperty(() => Obj.Valid.From, x => Obj.Valid.From = x);
 
         }
 
         [TestMethod]
         public void ValidToTest()
         {
-            var Obj = new PersonName();
-            TestProperty(() => Obj.ValidTo, x => Obj.ValidTo = x);
+            TestProperty(() => Obj.Valid.To, x => Obj.Valid.To = x);
 
         }
+
+
 
 
         //    [TestMethod]

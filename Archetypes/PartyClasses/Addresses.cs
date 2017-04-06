@@ -3,14 +3,22 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    class Addresses : Archetypes<Address>
+    public class Addresses : Archetypes<Address>
     {
-        public static Addresses Instances { get; } = new Addresses();
+        public static Addresses Instance { get; } = new Addresses();
 
-        public static Address FindPersonAddressById(string id)
+        public static Addresses GetPersonAddresses(string uniqueId)
         {
-            return Instances.Find(x => x.UniqueId == id);
+            var r = new Addresses();
+            var l = Instance.FindAll(x => x.PartyId == uniqueId);
+            r.AddRange(l);
+            return r;
         }
+
+        //public static Address FindPersonAddressById(string id)
+        //{
+        //    return Instances.Find(x => x.UniqueId == id);
+        //}
 
         public static Addresses Random()
         {

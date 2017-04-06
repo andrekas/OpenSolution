@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
 
 
@@ -30,12 +31,6 @@ namespace Open.Tests.Archetypes.PartyClasses
         //    Assert.IsNotNull(p);
         //}
 
-        [TestMethod]
-        public void ConstructorTest()
-        {
-            Assert.AreEqual(Obj.GetType().BaseType, typeof(PersonName));
-            Assert.IsInstanceOfType(Obj, typeof(IList<string>));
-        }
 
 
         protected override PersonNames GetRandomObj()

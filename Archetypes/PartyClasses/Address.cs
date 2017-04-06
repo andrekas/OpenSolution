@@ -16,11 +16,12 @@ namespace Open.Archetypes.PartyClasses
         private TelecomAddress telecomAddress;
         private WebpageAddress webpageAddress;
         private EmailAddress emailAddress;
+        private string partyId;
 
-        public Address ContactAddress
-        {
-            get { return Addresses.FindPersonAddressById(UniqueId); }
-        }
+        //public Address ContactAddress
+        //{
+        //    get { return Addresses.GetPersonAddresses(UniqueId); }
+        //}
 
         //public GeographicAddress GeographicAddress
         //{
@@ -31,6 +32,12 @@ namespace Open.Archetypes.PartyClasses
         {
             get { return SetDefault(ref geographicAddress); }
             set { SetValue(ref geographicAddress, value); }
+        }
+
+        public string PartyId
+        {
+            get { return SetDefault(ref partyId); }
+            set { SetValue(ref partyId, value); }
         }
 
         public TelecomAddress TelecomAddress
@@ -62,6 +69,7 @@ namespace Open.Archetypes.PartyClasses
             get { return SetDefault(ref validTo); }
             set { SetValue(ref validTo, value); }
         }
+
 
         public override Party Type { get; }
 

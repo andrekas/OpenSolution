@@ -12,15 +12,10 @@ namespace Open.Archetypes.PartyClasses
        private BodyMetric bodyMetric;
         private DateTime dateOfBirth;
 
-        public string PersonNameId
-        {
-            get { return SetDefault(ref personNameId); }
-            set { SetValue(ref personNameId, value); }
-        }
 
-        public PersonName PersonName
+        public PersonNames PersonName
         {
-            get { return PersonNames.FindPersonNameById(UniqueId); }
+            get { return PersonNames.GetPersonNames(UniqueId); }
         }
 
         //public string Name

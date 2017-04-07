@@ -1,11 +1,11 @@
 ﻿using System;
-using Open.Archetypes.BaseClasses;
+using Open.Aids;
 
 namespace Open.Archetypes.PartyClasses
 {
     public class Person : Party
     {
-        private string name;
+        private string personName;
         private string personNameId;
         private ISOGender gender;
         private Ethnicity ethnicity;
@@ -55,6 +55,15 @@ namespace Open.Archetypes.PartyClasses
             var e = new Person();
             e.SetRandomValues();
             return e;
+        }
+        protected override void SetRandomValues()
+        {
+            base.SetRandomValues();
+            personName = GetRandom.String();
+            personNameId = GetRandom.String();
+            gender = GetRandom.Enum<ISOGender>();
+            ethnicity = GetRandom.Enum<Ethnicity>();
+            dateOfBirth = GetRandom.DateTime();
         }
     }
 }

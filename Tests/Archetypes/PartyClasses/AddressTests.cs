@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Open.Archetypes.PartyClasses;
-using Open.Tests.Aids;
+﻿using Open.Archetypes.PartyClasses;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Open.Archetypes.BaseClasses;
 
@@ -29,7 +23,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void ConstructorTest()
         {
             var a = new Address().GetType().BaseType;
-            Assert.AreEqual(a, typeof(BaseEntity<Party>));
+            Assert.AreEqual(a, typeof(BaseEntity));
         }
         [TestMethod]
         public void IsNotNullTest()

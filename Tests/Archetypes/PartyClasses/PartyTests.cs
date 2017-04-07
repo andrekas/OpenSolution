@@ -5,7 +5,7 @@ namespace Open.Tests.Archetypes.PartyClasses {
     [TestClass] public class PartyTests : ClassTests<Party> {
         [TestMethod] public void ConstructorTest() {
             var a = new Party().GetType().BaseType;
-            Assert.AreEqual(a, typeof(UniqueEntity));
+            Assert.AreEqual(a, typeof(BaseEntity<PartyType>));
         }
     }
 }

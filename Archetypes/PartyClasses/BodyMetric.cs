@@ -2,7 +2,7 @@
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class BodyMetric: UniqueEntity
+    public class BodyMetric: BaseEntity
 
     {
         private string partyId;
@@ -12,7 +12,18 @@ namespace Open.Archetypes.PartyClasses
             set { SetValue(ref partyId, value); }
         }
 
-        public string Name { get; set; }
-        public object Value { get; set; }
+        private string name;
+        public string Name
+        {
+            get { return SetDefault(ref name); }
+            set { SetValue(ref name, value); }
+        }
+
+        private object value;
+        public object Value
+        {
+            get { return SetDefault(ref value); }
+            set { SetValue(ref this.value, value); }
+        }
     }
 }

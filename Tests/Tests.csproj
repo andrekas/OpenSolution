@@ -98,7 +98,6 @@
     <Compile Include="Archetypes\PartyClasses\EmailAddressTests.cs" />
     <Compile Include="Archetypes\PartyClasses\EthnicitiesTests.cs" />
     <Compile Include="Archetypes\PartyClasses\EthnicityTests.cs" />
-    <Compile Include="Archetypes\PartyClasses\GeograficAddressesTests.cs" />
     <Compile Include="Archetypes\PartyClasses\GeographicAddressTests.cs" />
     <Compile Include="Archetypes\PartyClasses\ISOGenderTests.cs" />
     <Compile Include="Archetypes\PartyClasses\PartyTests.cs" />
@@ -109,7 +108,6 @@
     <Compile Include="Archetypes\PartyClasses\TelecomAddressTests.cs" />
     <Compile Include="Archetypes\PartyClasses\TelecomAdressesTests.cs" />
     <Compile Include="Archetypes\PartyClasses\WebpageAddressesTests.cs" />
-    <Compile Include="Archetypes\PartyClasses\WebpageAddressTests.cs" />
     <Compile Include="Archetypes\ProcessClasses\ProcessTests.cs" />
     <Compile Include="Archetypes\ProductClasses\ProductTests.cs" />
     <Compile Include="Archetypes\ProductClasses\CanceledServiceTests.cs" />

@@ -1,4 +1,5 @@
-﻿using Open.Archetypes.BaseClasses;
+﻿using Open.Aids;
+using Open.Archetypes.BaseClasses;
 
 
 namespace Open.Archetypes.PartyClasses
@@ -26,6 +27,13 @@ namespace Open.Archetypes.PartyClasses
             var e = new Ethnicity();
             e.SetRandomValues();
             return e;
+        }
+        protected override void SetRandomValues()
+        {
+            base.SetRandomValues();
+            ethnicityName = GetRandom.String();
+            description = GetRandom.String();
+            
         }
     }
 }

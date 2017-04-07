@@ -66,7 +66,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(GeographicAddresses));
+            Assert.IsNotNull(typeof(GeographicAddress));
         }
     }
 }

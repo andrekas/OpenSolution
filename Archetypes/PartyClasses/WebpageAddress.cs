@@ -1,5 +1,4 @@
 ﻿using Open.Aids;
-using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
@@ -18,6 +17,12 @@ namespace Open.Archetypes.PartyClasses
             var e = new WebpageAddress();
             e.SetRandomValues();
             return e;
+        }
+       
+        protected override void SetRandomValues()
+        {
+            base.SetRandomValues();
+            url = GetRandom.String();
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Open.Archetypes.PartyClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses

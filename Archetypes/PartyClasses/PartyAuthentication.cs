@@ -2,7 +2,7 @@
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class PartyAuthentication : UniqueEntity
+    public class PartyAuthentication : BaseEntity
     {
         public static PartyAuthentication Random()
         {

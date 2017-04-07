@@ -18,5 +18,6 @@ namespace Open.Archetypes.PartyClasses
             get { return Str.EmptyIfNull(description); }
             set { description = value; }
         }
+        
     }
 }

@@ -31,7 +31,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(EmailAddresses));
+            Assert.IsNotNull(typeof(EmailAddress));
         }
 
         private TestContext testContextInstance;

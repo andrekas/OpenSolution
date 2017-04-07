@@ -1,9 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Open.Aids;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
-using Open.Archetypes.RoleClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
 {

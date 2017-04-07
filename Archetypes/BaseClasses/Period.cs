@@ -31,8 +31,8 @@ namespace Open.Archetypes.BaseClasses {
             var d2 = DateTime.Now;
             var years = -GetRandom.UInt8(10, 100);
             var d1 = d2.AddDays(years);
-            fromField = GetRandom.DateTime(d1, d2);
-            toField = DateTime.MaxValue;
+            fromField = d1;
+            toField = GetRandom.DateTime(d1, DateTime.MaxValue);
         }
     }
 }

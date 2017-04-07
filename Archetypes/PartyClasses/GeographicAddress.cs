@@ -2,7 +2,7 @@
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class GeographicAddress: TemporalEntity
+    public class GeographicAddress: Address
 
     {
     private string addressLines;

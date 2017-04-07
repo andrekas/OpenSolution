@@ -1,6 +1,6 @@
 ﻿namespace Open.Archetypes.PartyClasses
 {
-    public class Organisation
+    public class Organisation: Party
     {
 
     }

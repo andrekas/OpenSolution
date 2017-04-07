@@ -3,7 +3,7 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class EmailAddress: TemporalEntity
+    public class EmailAddress: Address
 
     {
     private string email;

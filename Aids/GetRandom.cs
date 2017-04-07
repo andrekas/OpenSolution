@@ -9,7 +9,7 @@ namespace Open.Aids {
             var i = Int32(min, max);
             return (char) i;
         }
-        public static byte Count(byte min = 5, byte max = 10) {
+        public static byte Count(byte min = 2, byte max =5) {
             return UInt8(min, max);
         }
         public static DateTime DateTime(DateTime? min = null,

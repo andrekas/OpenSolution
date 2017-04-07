@@ -1,14 +1,11 @@
 ﻿using Open.Archetypes.BaseClasses;
 namespace Open.Archetypes.PartyClasses
 {
-    public class Party: UniqueEntity
+    public class Party: BaseEntity<PartyType>
     {
         private string personName;
         private string description;
-        public Addresses Addresses
-        {
-            get { return Addresses.GetPersonAddresses(UniqueId); }
-        }
+        public AddressUsages Addresses => AddressUsages.GetPersonAddresses(UniqueId);
 
         public string PersonName
         {
@@ -21,5 +18,7 @@ namespace Open.Archetypes.PartyClasses
             get { return SetDefault(ref description); }
             set { SetValue(ref description, value); }
         }
+
+        public override PartyType Type => PartyTypes.Find(TypeId);
     }
 }

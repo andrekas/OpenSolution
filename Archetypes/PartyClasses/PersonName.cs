@@ -8,7 +8,7 @@ namespace Open.Archetypes.PartyClasses
 {
     public class PersonName: TemporalEntity
     {
-        public string id;
+        private string personId;
         private string prefix;
         private string givenName;
         private string middleName;
@@ -20,8 +20,8 @@ namespace Open.Archetypes.PartyClasses
         //private DateTime validTo;
         public string PersonId
         {
-            get { return SetDefault(ref id); }
-            set { SetValue(ref id, value); }
+            get { return SetDefault(ref personId); }
+            set { SetValue(ref personId, value); }
         }
         public Person Person
         {
@@ -83,5 +83,17 @@ namespace Open.Archetypes.PartyClasses
             return e;
         }
 
+        protected override void SetRandomValues()
+        {
+            base.SetRandomValues();
+            personId = GetRandom.String();
+            prefix = GetRandom.String();
+            givenName = GetRandom.String();
+            middleName = GetRandom.String();
+            familyName = GetRandom.String();
+            prefferedName = GetRandom.String();
+            suffix = GetRandom.String();
+            use = GetRandom.String();
+        }
     }
 }

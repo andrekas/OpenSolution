@@ -2,7 +2,7 @@
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class TelecomAddress: TemporalEntity
+    public class TelecomAddress: Address
 
     {
     private string areaCode;

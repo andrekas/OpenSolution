@@ -3,21 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Open.Aids;
 using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class Address : UniqueEntity
-
+    public class PartyTypes: Archetypes<PartyType>
     {
+        public static PartyTypes Instance { get; } = new PartyTypes();
 
-        public static Address Random()
+        public static PartyType Find(string id)
         {
-            var e = new Address();
-            e.SetRandomValues();
-            return e;
+            return Instance.Find(x => x.UniqueId == id);
         }
-
     }
 }

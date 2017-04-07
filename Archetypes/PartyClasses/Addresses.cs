@@ -7,13 +7,6 @@ namespace Open.Archetypes.PartyClasses
     {
         public static Addresses Instance { get; } = new Addresses();
 
-        public static Addresses GetPersonAddresses(string uniqueId)
-        {
-            var r = new Addresses();
-            var l = Instance.FindAll(x => x.PartyId == uniqueId);
-            r.AddRange(l);
-            return r;
-        }
 
         //public static Address FindPersonAddressById(string id)
         //{

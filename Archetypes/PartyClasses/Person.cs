@@ -3,13 +3,12 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class Person : BaseEntity<Party>
+    public class Person : Party
     {
         private string name;
         private string personNameId;
         private ISOGender gender;
         private Ethnicity ethnicity;
-       private BodyMetric bodyMetric;
         private DateTime dateOfBirth;
 
 
@@ -31,10 +30,15 @@ namespace Open.Archetypes.PartyClasses
         }
 
 
-        public BodyMetric BodyMetric
+        public BodyMetrics BodyMetrics
         {
-            get { return SetDefault(ref bodyMetric); }
-            set { SetValue(ref bodyMetric, value); }
+            get
+            {
+                var b = new BodyMetrics();
+                var l = BodyMetrics.Instances.FindAll(x=> x.PartyId == UniqueId);
+                b.AddRange(l);
+                return b;
+            }
         }
 
         public DateTime DateOfBirth
@@ -44,7 +48,7 @@ namespace Open.Archetypes.PartyClasses
         }
 
 
-        public override Party Type { get; }
+        public override PartyType Type => PartyType.Person;
 
         public static Person Random()
         {

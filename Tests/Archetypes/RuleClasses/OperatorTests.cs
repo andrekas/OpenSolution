@@ -22,7 +22,7 @@ namespace Open.Tests.Archetypes.RuleClasses
             Assert.IsTrue(Operator.Empty.IsOperator());
         }
         [TestMethod] public void OperationTest() {
-            TestProperty(()=>Obj.Operation, x =>Obj.Operation= x);
+            TestEnumProperty(()=>Obj.Operation, x =>Obj.Operation= x);
         }
         [TestMethod] public void EmptyTest() {
             TestSingleton(()=>Operator.Empty);

@@ -14,7 +14,8 @@ namespace Open.Tests.Archetypes.PartyClasses
     {
         protected override PersonName GetRandomObj()
         {
-            return PersonName.Random();
+            var p = PersonName.Random();
+            return p;
         }
 
         [TestInitialize]
@@ -45,14 +46,12 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void PrefixTest()
         {
             TestProperty(() => Obj.Prefix, x => Obj.Prefix = x);
-
         }
 
         [TestMethod]
         public void GivenNameTest()
         {
             TestProperty(() => Obj.GivenName, x => Obj.GivenName = x);
-
         }
 
         [TestMethod]

@@ -4,8 +4,8 @@ using Open.Archetypes.BaseClasses;
 namespace Open.Tests {
     public class PropertyTests : Serializable {
         protected void TestProperty(Func<string> get, Action<string> set) {
-            Assert.AreEqual(string.Empty, get());
             var s = Open.Aids.GetRandom.String();
+            Assert.AreNotEqual(s, get());
             set(s);
             Assert.AreEqual(s, get());
             set(null);
@@ -55,15 +55,15 @@ namespace Open.Tests {
         }
         public void TestProperty(Func<uint> get, Action<uint> set, uint initialValue) {
             Assert.AreEqual(initialValue, get());
-            var s = Open.Aids.GetRandom.UInt32();
-            set(s);
-            Assert.AreEqual(s, get());
+            var i = Open.Aids.GetRandom.UInt32();
+            Assert.AreNotEqual(i, get());
+            set(i);
+            Assert.AreEqual(i, get());
         }
         public void TestEnumProperty<T>(Func<T> get, Action<T> set) {
             Assert.IsTrue(typeof(T).IsEnum);
-            var i = Open.Aids.GetEnum.Value<T>(0);
-            Assert.AreEqual(i, get());
-            var s = Open.Aids.GetRandom.Enum< T>();
+            var s = Open.Aids.GetRandom.Enum<T>();
+            Assert.AreNotEqual(s, get());
             set(s);
             Assert.AreEqual(s, get());
         }

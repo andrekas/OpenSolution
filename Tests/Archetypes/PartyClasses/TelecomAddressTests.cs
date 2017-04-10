@@ -72,7 +72,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(TelecomAddresses));
+            Assert.IsNotNull(typeof(TelecomAddress));
         }
 
 

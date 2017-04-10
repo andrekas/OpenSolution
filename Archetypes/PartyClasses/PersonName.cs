@@ -1,6 +1,4 @@
-﻿using System;
-using System.CodeDom;
-using Open.Aids;
+﻿using Open.Aids;
 using Open.Archetypes.BaseClasses;
 
 
@@ -66,16 +64,6 @@ namespace Open.Archetypes.PartyClasses
             set { SetValue(ref use, value); }
         }
 
-        //public DateTime ValidFrom
-        //{
-        //    get { return SetDefault(ref validFrom); }
-        //    set { SetValue(ref validFrom, value); }
-        //}
-        //public DateTime ValidTo
-        //{
-        //    get { return SetDefault(ref validTo); }
-        //    set { SetValue(ref validTo, value); }
-        //}
         public static PersonName Random()
         {
             var e = new PersonName();

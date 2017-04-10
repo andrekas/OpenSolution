@@ -1,6 +1,6 @@
 ﻿using Open.Aids;
 namespace Open.Archetypes.BaseClasses {
-    public abstract class BaseEntity<T> : UniqueEntity {
+    public abstract class BaseEntity<T> : BaseEntity {
         private string typeId;
         public string TypeId {
             get { return SetDefault(ref typeId); }

@@ -1,5 +1,4 @@
 ﻿using Open.Aids;
-using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {

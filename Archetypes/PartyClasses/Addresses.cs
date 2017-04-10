@@ -8,11 +8,6 @@ namespace Open.Archetypes.PartyClasses
         public static Addresses Instance { get; } = new Addresses();
 
 
-        //public static Address FindPersonAddressById(string id)
-        //{
-        //    return Instances.Find(x => x.UniqueId == id);
-        //}
-
         public static Addresses Random()
         {
             var e = new Addresses();

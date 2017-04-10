@@ -16,3 +16,4 @@ C:\Users\Andre\Source\Repos\OpenSolution\Aids\bin\Debug\Open.Aids.dll
 C:\Users\Andre\Source\Repos\OpenSolution\Aids\bin\Debug\Open.Aids.pdb
 C:\Users\Andre\Source\Repos\OpenSolution\Aids\obj\Debug\Open.Aids.dll
 C:\Users\Andre\Source\Repos\OpenSolution\Aids\obj\Debug\Open.Aids.pdb
+C:\Users\Andre\Source\Repos\OpenSolution\Aids\obj\Debug\Aids.csprojResolveAssemblyReference.cache

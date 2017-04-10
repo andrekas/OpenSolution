@@ -12,5 +12,7 @@ namespace Open.Archetypes.PartyClasses
             return e;
         }
 
+        
+
     }
 }

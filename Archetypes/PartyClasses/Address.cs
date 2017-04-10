@@ -1,4 +1,5 @@
-﻿using Open.Archetypes.BaseClasses;
+﻿using Open.Aids;
+using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
@@ -11,8 +12,6 @@ namespace Open.Archetypes.PartyClasses
             e.SetRandomValues();
             return e;
         }
-
-        
 
     }
 }

@@ -80,7 +80,7 @@ namespace Open.Archetypes.BaseClasses {
             return Safe.Run(() => list.FindLastIndex(match), -1);
         }
         public T Get(int idx) { return Safe.Run(() => this[idx], DefaultValue()); }
-        public bool IsReadOnly { get; protected internal set; }
+        public new bool IsReadOnly { get; protected internal set; }
         public bool IsSet { get; protected internal set; }
         public int IndexOf(T item) { return Safe.Run(() => list.IndexOf(item), -1); }
         public virtual void Insert(int index, T item) {

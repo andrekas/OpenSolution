@@ -1,4 +1,6 @@
-﻿namespace Open.Archetypes.PartyClasses
+﻿using Open.Aids;
+
+namespace Open.Archetypes.PartyClasses
 {
     public class GeographicAddress: Address
 
@@ -38,11 +40,21 @@
             set { SetValue(ref zipOrPostcode, value); }
         }
 
-        public static GeographicAddress Random()
+        public new static GeographicAddress Random()
         {
             var e = new GeographicAddress();
             e.SetRandomValues();
             return e;
+        }
+
+        protected override void SetRandomValues()
+        {
+            base.SetRandomValues();
+            addressLines = GetRandom.String();
+            city = GetRandom.String();
+            country = GetRandom.String();
+            regionOrState = GetRandom.String();
+            zipOrPostcode = GetRandom.String();
         }
 
     }

@@ -48,7 +48,7 @@ namespace Open.Archetypes.PartyClasses
             set { SetValue(ref physicalType, value); }
         }
 
-        public static TelecomAddress Random()
+        public new static TelecomAddress Random()
         {
             var e = new TelecomAddress();
             e.SetRandomValues();

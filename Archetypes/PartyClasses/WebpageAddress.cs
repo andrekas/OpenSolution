@@ -12,7 +12,7 @@ namespace Open.Archetypes.PartyClasses
             set { SetValue(ref url, value); }
         }
 
-        public static WebpageAddress Random()
+        public new static WebpageAddress Random()
         {
             var e = new WebpageAddress();
             e.SetRandomValues();

@@ -12,7 +12,7 @@ namespace Open.Archetypes.PartyClasses
         private DateTime dateOfBirth;
 
 
-        public PersonNames PersonName
+        public new PersonNames PersonName
         {
             get { return PersonNames.GetPersonNames(UniqueId); }
         }

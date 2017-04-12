@@ -96,7 +96,7 @@ namespace Open.Archetypes.BaseClasses {
                 return frames[i + 2].GetMethod().Name;
             }, string.Empty);
         }
-        public static T Clone<T>(T obj) where T: Serializable, new() {
+        public new static T Clone<T>(T obj) where T: Serializable, new() {
             var s = ToJson(obj);
             return FromJson<T>(s);
         }

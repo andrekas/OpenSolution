@@ -94,7 +94,6 @@
     <Compile Include="Archetypes\PartyClasses\AddressTests.cs" />
     <Compile Include="Archetypes\PartyClasses\BodyMetricsTests.cs" />
     <Compile Include="Archetypes\PartyClasses\BodyMetricTests.cs" />
-    <Compile Include="Archetypes\PartyClasses\EmailAddressesTests.cs" />
     <Compile Include="Archetypes\PartyClasses\EmailAddressTests.cs" />
     <Compile Include="Archetypes\PartyClasses\EthnicitiesTests.cs" />
     <Compile Include="Archetypes\PartyClasses\EthnicityTests.cs" />
@@ -106,7 +105,6 @@
     <Compile Include="Archetypes\PartyClasses\PeopleTests.cs" />
     <Compile Include="Archetypes\PartyClasses\PersonTests.cs" />
     <Compile Include="Archetypes\PartyClasses\TelecomAddressTests.cs" />
-    <Compile Include="Archetypes\PartyClasses\TelecomAdressesTests.cs" />
     <Compile Include="Archetypes\PartyClasses\WebpageAddressesTests.cs" />
     <Compile Include="Archetypes\ProcessClasses\ProcessTests.cs" />
     <Compile Include="Archetypes\ProductClasses\ProductTests.cs" />

@@ -19,3 +19,10 @@ C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Archetypes\b
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Archetypes\obj\Debug\Archetypes.csprojResolveAssemblyReference.cache
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Archetypes\obj\Debug\Open.Archetypes.dll
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Archetypes\obj\Debug\Open.Archetypes.pdb
+C:\Users\Asus\Documents\Project\Archetypes\bin\Debug\Open.Archetypes.dll
+C:\Users\Asus\Documents\Project\Archetypes\bin\Debug\Open.Archetypes.pdb
+C:\Users\Asus\Documents\Project\Archetypes\bin\Debug\Open.Aids.dll
+C:\Users\Asus\Documents\Project\Archetypes\bin\Debug\Open.Aids.pdb
+C:\Users\Asus\Documents\Project\Archetypes\obj\Debug\Archetypes.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\Project\Archetypes\obj\Debug\Open.Archetypes.dll
+C:\Users\Asus\Documents\Project\Archetypes\obj\Debug\Open.Archetypes.pdb

@@ -31,3 +31,14 @@ C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Logic\bin\De
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Logic\obj\Debug\Open.Logic.dll
 C:\Users\Kert\OneDrive\University\Programming\Projects\OpenSolution\Logic\obj\Debug\Open.Logic.pdb
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Logic.dll
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Logic.pdb
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Aids.dll
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Archetypes.dll
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Data.dll
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Aids.pdb
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Archetypes.pdb
+C:\Users\Asus\Documents\Project\Logic\bin\Debug\Open.Data.pdb
+C:\Users\Asus\Documents\Project\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\Project\Logic\obj\Debug\Open.Logic.dll
+C:\Users\Asus\Documents\Project\Logic\obj\Debug\Open.Logic.pdb

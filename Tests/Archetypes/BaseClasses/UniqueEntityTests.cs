@@ -2,15 +2,15 @@
 using Open.Aids;
 using Open.Archetypes.BaseClasses;
 namespace Open.Tests.Archetypes.BaseClasses {
-    [TestClass] public class UniqueEntityTests : ClassTests<BaseEntity> {
-        private class TestClass : BaseEntity {
-            public static BaseEntity Random() {
+    [TestClass] public class UniqueEntityTests : ClassTests<UniqueEntity> {
+        private class TestClass : UniqueEntity {
+            public static UniqueEntity Random() {
                 var o = new TestClass();
                 o.SetRandomValues();
                 return o;
             }
         }
-        private BaseEntity obj;
+        private UniqueEntity obj;
         [TestInitialize] public override void TestInitialize() {
             base.TestInitialize();
             obj = TestClass.Random();

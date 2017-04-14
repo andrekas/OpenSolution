@@ -5,7 +5,7 @@ namespace Open.Archetypes.PartyClasses
 {
     public class Ethnicities : Archetypes<Ethnicity>
     {
-        public Ethnicities Instances { get; } = new Ethnicities();
+        public static Ethnicities Instance { get; } = new Ethnicities();
         
     }
 }

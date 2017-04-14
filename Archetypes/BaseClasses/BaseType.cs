@@ -1,6 +1,6 @@
 ﻿using Open.Aids;
 namespace Open.Archetypes.BaseClasses {
-    public abstract class BaseType<T> : BaseEntity where T:BaseType<T> {
+    public abstract class BaseType<T> : UniqueEntity where T:BaseType<T> {
         private string typeId;
         public string TypeId {
             get { return SetDefault(ref typeId); }

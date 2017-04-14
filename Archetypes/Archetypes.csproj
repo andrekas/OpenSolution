@@ -78,6 +78,8 @@
     <Compile Include="PartyClasses\Party.cs" />
     <Compile Include="PartyClasses\PartyAuthentication.cs" />
     <Compile Include="PartyClasses\PartyAuthentications.cs" />
+    <Compile Include="PartyClasses\PartyEthnicity.cs" />
+    <Compile Include="PartyClasses\PartyEthnicities.cs" />
     <Compile Include="PartyClasses\PartySignature.cs" />
     <Compile Include="PartyClasses\PartySignatures.cs" />
     <Compile Include="PartyClasses\PartyType.cs" />

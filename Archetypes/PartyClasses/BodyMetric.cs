@@ -2,7 +2,7 @@
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class BodyMetric: BaseEntity
+    public class BodyMetric: UniqueEntity
 
     {
         private string partyId;

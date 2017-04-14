@@ -4,13 +4,20 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class Ethnicity: Archetype
+    public class Ethnicity : UniqueEntity
 
     {
     private string ethnicityName;
     private string description;
+    private string partyId;
 
-    public string EthnicityName
+    public string PartyId
+        {
+            get { return SetDefault(ref partyId); }
+            set { SetValue(ref partyId, value); }
+        }
+
+        public string EthnicityName
     {
             get { return SetDefault(ref ethnicityName); }
             set { SetValue(ref ethnicityName, value); }

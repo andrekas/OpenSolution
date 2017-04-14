@@ -11,18 +11,12 @@ namespace Open.Archetypes.PartyClasses
             get { return SetDefault(ref name); }
             set { SetValue(ref name, value); }
         }
-        public static PartyType Person
+        public static PartyType Person { get; } = new PartyType
         {
-            get
-            {
-                var p = new PartyType
-                {
-                    Name = "Person",
-                    UniqueId = "Person",
-                    TypeId = string.Empty
-                };
-                return p;
-            }
-        }
+            Name = "Person",
+            UniqueId = "Person",
+            TypeId = string.Empty
+        };
+
     }
 }

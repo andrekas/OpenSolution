@@ -1,6 +1,6 @@
 ﻿using Open.Aids;
 namespace Open.Archetypes.BaseClasses {
-    public abstract class BaseEntity : AttributedEntity {
+    public abstract class UniqueEntity : AttributedEntity {
         private string uniqueId;
         public string UniqueId {
             get { return SetDefault(ref uniqueId); }

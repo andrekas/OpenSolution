@@ -4,7 +4,7 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class PersonName: TemporalEntity
+    public class PersonName: UniqueEntity
     {
         private string personId;
         private string prefix;
@@ -14,8 +14,6 @@ namespace Open.Archetypes.PartyClasses
         private string prefferedName;
         private string suffix;
         private string use;
-        //private DateTime validFrom;
-        //private DateTime validTo;
         public string PersonId
         {
             get { return SetDefault(ref personId); }
@@ -63,7 +61,8 @@ namespace Open.Archetypes.PartyClasses
             get { return SetDefault(ref use); }
             set { SetValue(ref use, value); }
         }
-
+        public bool IsOfficial => Use == "Official";
+        public static PersonName Empty { get; } = new PersonName();
         public static PersonName Random()
         {
             var e = new PersonName();

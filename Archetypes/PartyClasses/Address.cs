@@ -3,7 +3,7 @@ using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class Address : BaseEntity
+    public class Address : UniqueEntity
 
     {
         public static Address Random()

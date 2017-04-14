@@ -23,7 +23,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void ConstructorTest()
         {
             var a = new Address().GetType().BaseType;
-            Assert.AreEqual(a, typeof(BaseEntity));
+            Assert.AreEqual(a, typeof(UniqueEntity));
         }
         [TestMethod]
         public void IsNotNullTest()

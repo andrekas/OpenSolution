@@ -1,4 +1,5 @@
-﻿using Open.Aids;
+﻿using System;
+using Open.Aids;
 using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
@@ -23,6 +24,12 @@ namespace Open.Archetypes.PartyClasses
                 e.Add(PersonName.Random());
             return e;
         }
-
+        public PersonName GetOfficial() {
+            foreach (var e in this) {
+                if (e.IsOfficial) return e;
+            }
+            if (Count > 0) return this[0];
+            return PersonName.Empty;
+        }
     }
 }

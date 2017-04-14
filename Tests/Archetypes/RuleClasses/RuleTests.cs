@@ -5,7 +5,7 @@ namespace Open.Tests.Archetypes.RuleClasses {
     [TestClass] public class RuleTests : ClassTests<Rule> {
         [TestMethod] public void ConstructorTest() {
             var a = new Rule().GetType().BaseType;
-            Assert.AreEqual(a, typeof(BaseEntity));
+            Assert.AreEqual(a, typeof(UniqueEntity));
         }
     }
 }

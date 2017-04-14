@@ -2,7 +2,7 @@
 
 namespace Open.Archetypes.PartyClasses
 {
-    public class AddressUsage: BaseEntity
+    public class AddressUsage: UniqueEntity
     {
         private string partyId;
 

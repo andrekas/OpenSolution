@@ -2,6 +2,8 @@
 {
     public class Organisation: Party
     {
-
+        public override string GetName() {
+            return string.Empty;
+        }
     }
 }

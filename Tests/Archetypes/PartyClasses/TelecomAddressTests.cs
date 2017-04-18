@@ -1,80 +1,77 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
-
 
 namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
-    public class TelecomAddressTests
+    public class TelecomAddressTests : CommonTests<TelecomAddress>
     {
-        private TelecomAddress g;
+        protected override TelecomAddress GetRandomObj()
+        {
+            var p = TelecomAddress.Random();
+            return p;
+        }
+
         [TestInitialize]
-        public void Init() { g = new TelecomAddress(); }
+        public override void TestInitialize()
+        {
+            base.TestInitialize();
+        }
+
         [TestCleanup]
-        public void Cleanup()
+        public override void TestCleanup()
         {
-            g = null;
+            base.TestCleanup();
         }
 
         [TestMethod]
-        public void ConstructorTest() { Assert.IsNotNull(g); }
-
-
-        [TestMethod]
-        public void AreaCodeTests()
+        public void ConstructorTest()
         {
-            var fakeValue = "some kind of AreaCode";
-            g.AreaCode = fakeValue;
-            Assert.AreEqual(fakeValue, g.AreaCode);
-            Assert.AreEqual(typeof(string), g.AreaCode.GetType());
-        }
-        [TestMethod]
-        public void CountryCodeTests()
-        {
-            var fakeValue = "some kind of CountryCode";
-            g.CountryCode = fakeValue;
-            Assert.AreEqual(fakeValue, g.CountryCode);
-            Assert.AreEqual(typeof(string), g.CountryCode.GetType());
-        }
-        [TestMethod]
-        public void ExtensionTests()
-        {
-            var fakeValue = "some kind of Extension";
-            g.Extension = fakeValue;
-            Assert.AreEqual(fakeValue, g.Extension);
-            Assert.AreEqual(typeof(string), g.Extension.GetType());
-        }
-        [TestMethod]
-        public void NationalDirectDialingPrefixTests()
-        {
-            var fakeValue = "some kind of NationalDirectDialingPrefix";
-            g.NationalDirectDialingPrefix = fakeValue;
-            Assert.AreEqual(fakeValue, g.NationalDirectDialingPrefix);
-            Assert.AreEqual(typeof(string), g.NationalDirectDialingPrefix.GetType());
-        }
-        [TestMethod]
-        public void NumberTests()
-        {
-            var fakeValue = "some kind of Number";
-            g.Number = fakeValue;
-            Assert.AreEqual(fakeValue, g.Number);
-            Assert.AreEqual(typeof(string), g.Number.GetType());
-        }
-        [TestMethod]
-        public void PhysicalTypeTests()
-        {
-            var fakeValue = "some kind of PhysicalType";
-            g.PhysicalType = fakeValue;
-            Assert.AreEqual(fakeValue, g.PhysicalType);
-            Assert.AreEqual(typeof(string), g.PhysicalType.GetType());
+            var a = new TelecomAddress().GetType().BaseType;
+            Assert.AreEqual(a, typeof(TemporalEntity));
         }
 
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(TelecomAddress));
+            Assert.IsNotNull(typeof(People));
         }
 
+        [TestMethod]
+        public void AreaCodeTests()
+        {
+            TestProperty(() => Obj.AreaCode, x => Obj.AreaCode = x);
+        }
 
+        [TestMethod]
+        public void CountryCodeTests()
+        {
+            TestProperty(() => Obj.CountryCode, x => Obj.CountryCode = x);
+        }
+
+        [TestMethod]
+        public void ExtensionTests()
+        {
+            TestProperty(() => Obj.Extension, x => Obj.Extension = x);
+        }
+
+        [TestMethod]
+        public void NationalDirectDialingPrefixTests()
+        {
+            TestProperty(() => Obj.NationalDirectDialingPrefix, x => Obj.NationalDirectDialingPrefix = x);
+        }
+
+        [TestMethod]
+        public void NumberTests()
+        {
+            TestProperty(() => Obj.Number, x => Obj.Number = x);
+        }
+
+        [TestMethod]
+        public void PhysicalTypeTests()
+        {
+            TestProperty(() => Obj.PhysicalType, x => Obj.PhysicalType = x);
+        }     
     }
 }

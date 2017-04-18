@@ -1,72 +1,71 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
-    public class GeographicAddressTests
+    public class GeographicAddressTests : CommonTests<GeographicAddress>
     {
-        private GeographicAddress g;
+        protected override GeographicAddress GetRandomObj()
+        {
+            var p = GeographicAddress.Random();
+            return p;
+        }
+
         [TestInitialize]
-        public void Init() { g = new GeographicAddress(); }
+        public override void TestInitialize()
+        {
+            base.TestInitialize();
+        }
+
         [TestCleanup]
-        public void Cleanup()
+        public override void TestCleanup()
         {
-            g = null;
+            base.TestCleanup();
         }
 
         [TestMethod]
-        public void ConstructorTest() { Assert.IsNotNull(g); }
-
-        [TestMethod]
-        public void AddressLinesTest()
+        public void ConstructorTest()
         {
-            var fakeValue = "some kind of address";
-            g.AddressLines = fakeValue;
-            Assert.AreEqual(fakeValue, g.AddressLines);
-            Assert.AreEqual(typeof(string), g.AddressLines.GetType());
-        }
-
-        [TestMethod]
-        public void CityTest()
-        {
-            var fakeValue = "some kind of city name";
-            g.City = fakeValue;
-            Assert.AreEqual(fakeValue, g.City);
-            Assert.AreEqual(typeof(string), g.City.GetType());
-        }
-
-        [TestMethod]
-        public void CountryTest()
-        {
-            var fakeValue = "some kind of country name";
-            g.Country = fakeValue;
-            Assert.AreEqual(fakeValue, g.Country);
-            Assert.AreEqual(typeof(string), g.Country.GetType());
-        }
-
-        [TestMethod]
-        public void RegionOrStateTest()
-        {
-            var fakeValue = "some kind of region or state name";
-            g.RegionOrState = fakeValue;
-            Assert.AreEqual(fakeValue, g.RegionOrState);
-            Assert.AreEqual(typeof(string), g.RegionOrState.GetType());
-        }
-
-        [TestMethod]
-        public void ZipOrPostcodeTest()
-        {
-            var fakeValue = "some kind of zip code or postcode";
-            g.ZipOrPostcode = fakeValue;
-            Assert.AreEqual(fakeValue, g.ZipOrPostcode);
-            Assert.AreEqual(typeof(string), g.ZipOrPostcode.GetType());
+            var a = new GeographicAddress().GetType().BaseType;
+            Assert.AreEqual(a, typeof(TemporalEntity));
         }
 
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(GeographicAddress));
+            Assert.IsNotNull(typeof(People));
         }
+
+        [TestMethod]
+        public void AddressLinesTest()
+        {
+            TestProperty(() => Obj.AddressLines, x => Obj.AddressLines = x);
+        }
+
+        [TestMethod]
+        public void CityTest()
+        {
+            TestProperty(() => Obj.City, x => Obj.City = x);
+        }
+
+        [TestMethod]
+        public void CountryTest()
+        {
+            TestProperty(() => Obj.Country, x => Obj.Country = x);
+        }
+
+        [TestMethod]
+        public void RegionOrStateTest()
+        {
+            TestProperty(() => Obj.RegionOrState, x => Obj.RegionOrState = x);
+        }
+
+        [TestMethod]
+        public void ZipOrPostcodeTest()
+        {
+            TestProperty(() => Obj.ZipOrPostcode, x => Obj.ZipOrPostcode = x);
+        }      
     }
 }

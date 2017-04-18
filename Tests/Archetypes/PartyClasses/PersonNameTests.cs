@@ -4,10 +4,8 @@ using Open.Archetypes.PartyClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
 {
-
     [TestClass]
     public class PersonNameTests : CommonTests<PersonName>
-
     {
         protected override PersonName GetRandomObj()
         {

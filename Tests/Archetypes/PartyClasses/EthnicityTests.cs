@@ -1,40 +1,52 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Open.Archetypes.BaseClasses;
 using Open.Archetypes.PartyClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
 {
-
         [TestClass]
-        public class EthnicityTests
+        public class EthnicityTests : CommonTests<Ethnicity>
+    {
+        protected override Ethnicity GetRandomObj()
         {
-            private Ethnicity e;
-            [TestInitialize]
-            public void Init() { e = new Ethnicity(); }
-            [TestCleanup]
-            public void Cleanup()
-            {
-                e = null;
-            }
+            var p = Ethnicity.Random();
+            return p;
+        }
 
-            [TestMethod]
-            public void ConstructorTest() { Assert.IsNotNull(e); }
+        [TestInitialize]
+        public override void TestInitialize()
+        {
+            base.TestInitialize();
+        }
 
-            [TestMethod]
+        [TestCleanup]
+        public override void TestCleanup()
+        {
+            base.TestCleanup();
+        }
+
+        [TestMethod]
+        public void ConstructorTest()
+        {
+            var a = new Ethnicity().GetType().BaseType;
+            Assert.AreEqual(a, typeof(TemporalEntity));
+        }
+        [TestMethod]
+        public void IsNotNullTest()
+        {
+            Assert.IsNotNull(typeof(People));
+        }
+
+        [TestMethod]
             public void EthnicityNameTest()
-            {
-                var fakeValue = "some kind of ethnicity";
-                e.EthnicityName = fakeValue;
-                Assert.AreEqual(fakeValue, e.EthnicityName);
-                Assert.AreEqual(typeof(string), e.EthnicityName.GetType());
-            }
+        {
+            TestProperty(() => Obj.EthnicityName, x => Obj.EthnicityName = x);
+        }
 
         [TestMethod]
         public void DescriptionTest()
         {
-            var fakeValue = "some kind of description";
-            e.Description = fakeValue;
-            Assert.AreEqual(fakeValue, e.Description);
-            Assert.AreEqual(typeof(string), e.Description.GetType());
+            TestProperty(() => Obj.Description, x => Obj.Description = x);
         }
     }
 }

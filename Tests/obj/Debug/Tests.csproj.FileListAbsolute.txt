@@ -76,3 +76,16 @@ C:\Users\Asus\Documents\TeamProject\OpenSolution\Tests\bin\Debug\Open.Logic.pdb
 C:\Users\Asus\Documents\TeamProject\OpenSolution\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 C:\Users\Asus\Documents\TeamProject\OpenSolution\Tests\obj\Debug\Open.Tests.dll
 C:\Users\Asus\Documents\TeamProject\OpenSolution\Tests\obj\Debug\Open.Tests.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\obj\Debug\Open.Tests.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\obj\Debug\Open.Tests.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Tests.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Tests.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Aids.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Archetypes.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Data.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Logic.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Aids.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Archetypes.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Data.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Tests\bin\Debug\Open.Logic.pdb

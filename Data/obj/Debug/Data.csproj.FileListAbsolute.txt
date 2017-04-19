@@ -52,3 +52,12 @@ C:\Users\Asus\Documents\TeamProject\OpenSolution\Data\bin\Debug\Open.Archetypes.
 C:\Users\Asus\Documents\TeamProject\OpenSolution\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Asus\Documents\TeamProject\OpenSolution\Data\obj\Debug\Open.Data.dll
 C:\Users\Asus\Documents\TeamProject\OpenSolution\Data\obj\Debug\Open.Data.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\bin\Debug\Open.Data.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\bin\Debug\Open.Data.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\bin\Debug\Open.Aids.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\bin\Debug\Open.Archetypes.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\bin\Debug\Open.Aids.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\bin\Debug\Open.Archetypes.pdb
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\obj\Debug\Open.Data.dll
+C:\Users\Katjuska\Documents\GitHub\OpenSolution\Data\obj\Debug\Open.Data.pdb

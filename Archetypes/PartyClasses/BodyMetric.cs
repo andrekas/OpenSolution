@@ -1,4 +1,5 @@
-﻿using Open.Archetypes.BaseClasses;
+﻿using Open.Aids;
+using Open.Archetypes.BaseClasses;
 
 namespace Open.Archetypes.PartyClasses
 {
@@ -24,6 +25,19 @@ namespace Open.Archetypes.PartyClasses
         {
             get { return SetDefault(ref value); }
             set { SetValue(ref this.value, value); }
+        }
+        public new static BodyMetric Random()
+        {
+            var e = new BodyMetric();
+            e.SetRandomValues();
+            return e;
+        }
+        protected override void SetRandomValues()
+        {
+            base.SetRandomValues();
+            partyId = GetRandom.String();
+            name = GetRandom.String();
+            value = GetRandom.String();
         }
     }
 }

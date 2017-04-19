@@ -4,52 +4,52 @@ using Open.Archetypes.PartyClasses;
 namespace Open.Tests.Archetypes.PartyClasses
 {    
     [TestClass]
-    public class EmailAddressTests
+    public class EmailAddressTests : CommonTests<EmailAddress>
     {
-        private EmailAddress g;
+        protected override EmailAddress GetRandomObj()
+        {
+            var p = EmailAddress.Random();
+            return p;
+        }
+
         [TestInitialize]
-        public void Init() { g = new EmailAddress(); }
+        public override void TestInitialize()
+        {
+            base.TestInitialize();
+        }
         [TestCleanup]
-        public void Cleanup()
+        public override void TestCleanup()
         {
-            g = null;
+            base.TestCleanup();
+
         }
 
         [TestMethod]
-        public void ConstructorTest() { Assert.IsNotNull(g); }
-
-
-        [TestMethod]
-        public void EmailTests()
+        public void ConstructorTest()
         {
-            var fakeValue = "some kind of email";
-            g.Email = fakeValue;
-            Assert.AreEqual(fakeValue, g.Email);
-            Assert.AreEqual(typeof(string), g.Email.GetType());
+            var a = new EmailAddress().GetType().BaseType;
+            Assert.AreEqual(a, typeof(Address));
         }
-
         [TestMethod]
         public void IsNotNullTest()
         {
-            Assert.IsNotNull(typeof(EmailAddress));
+            Assert.IsNotNull(typeof(People));
         }
-
-        private TestContext testContextInstance;
-
-        /// <summary>
-        ///Gets or sets the test context which provides
-        ///information about and functionality for the current test run.
-        ///</summary>
-        public TestContext TestContext
+        [TestMethod]
+        public void EmailTest()
         {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
+            TestProperty(() => Obj.Email, x => Obj.Email = x);
         }
+        //public TestContext TestContext
+        //{
+        //    get
+        //    {
+        //        return testContextInstance;
+        //    }
+        //    set
+        //    {
+        //        testContextInstance = value;
+        //    }
+        //}
     }
 }

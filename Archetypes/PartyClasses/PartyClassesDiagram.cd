@@ -3,12 +3,17 @@
   <Class Name="Open.Archetypes.PartyClasses.Person">
     <Position X="3.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAIAAAAAACAAAAAgAAAAAAQBAAAAQAAAAAABAA=</HashCode>
+      <HashCode>kAAAAAAIAAAEAACACAAIgAAAAAAQBAAAAQAAAAAABAA=</HashCode>
       <FileName>PartyClasses\Person.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Type" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="BodyMetrics" />
+      <Property Name="Ethnicities" />
+      <Property Name="PersonNames" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Open.Archetypes.PartyClasses.Party">
     <Position X="5.25" Y="2" Width="1.5" />
@@ -86,28 +91,25 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Open.Archetypes.PartyClasses.BodyMetric" Collapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
+    <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQEAAAEBCAAAAAgAAAAAAA=</HashCode>
       <FileName>PartyClasses\BodyMetric.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Open.Archetypes.PartyClasses.Ethnicity" Collapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAICAAgAAAAIAAAAAAEAAAABAAAAAAIAAAAAAA=</HashCode>
-      <FileName>PartyClasses\Ethnicity.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Open.Archetypes.PartyClasses.PartyEthnicity">
-    <Position X="0.5" Y="3" Width="1.5" />
+  <Class Name="Open.Archetypes.PartyClasses.PartyEthnicity" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAABAAAAEAAAABAAgAABAAAAAAAA=</HashCode>
       <FileName>PartyClasses\PartyEthnicity.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Ethnicity" />
-    </ShowAsAssociation>
+  </Class>
+  <Class Name="Open.Archetypes.PartyClasses.PersonName" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAGAAAIAgAAAAgEAAIUAAQCEAAEBggEBCAAAAAgAAA=</HashCode>
+      <FileName>PartyClasses\PersonName.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

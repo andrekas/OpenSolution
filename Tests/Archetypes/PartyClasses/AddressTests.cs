@@ -5,13 +5,14 @@ using Open.Archetypes.BaseClasses;
 namespace Open.Tests.Archetypes.PartyClasses
 {
     [TestClass]
-    public class AddressTests: CommonTests<Address>
+    public class AddressTests : CommonTests<Address>
     {
         [TestInitialize]
         public override void TestInitialize()
         {
             base.TestInitialize();
         }
+
         [TestCleanup]
         public override void TestCleanup()
         {
@@ -25,6 +26,7 @@ namespace Open.Tests.Archetypes.PartyClasses
             var a = new Address().GetType().BaseType;
             Assert.AreEqual(a, typeof(UniqueEntity));
         }
+
         [TestMethod]
         public void IsNotNullTest()
         {

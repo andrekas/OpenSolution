@@ -29,7 +29,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void ConstructorTest()
         {
             var a = new PersonName().GetType().BaseType;
-            Assert.AreEqual(a, typeof(TemporalEntity));
+            Assert.AreEqual(a, typeof(UniqueEntity));
         }
         [TestMethod]
         public void IsNotNullTest()

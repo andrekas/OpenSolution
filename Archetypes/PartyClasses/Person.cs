@@ -8,7 +8,7 @@ namespace Open.Archetypes.PartyClasses
         private ISOGender gender;
         private DateTime dateOfBirth;
 
-        //public PartyEthnicities Ethnicities => PartyEthnicities.GetPersonEthnicities(UniqueId);
+        public PartyEthnicities Ethnicities => PartyEthnicities.GetPersonEthnicities(UniqueId);
 
         public PersonNames PersonNames => PersonNames.GetPersonNames(UniqueId);
         public PersonName PersonName => PersonNames.GetOfficial();
@@ -19,16 +19,16 @@ namespace Open.Archetypes.PartyClasses
         }
 
 
-        //public BodyMetrics BodyMetrics
-        //{
-        //    get
-        //    {
-        //        var b = new BodyMetrics();
-        //        var l = BodyMetrics.Instances.FindAll(x=> x.PartyId == UniqueId);
-        //        b.AddRange(l);
-        //        return b;
-        //    }
-        //}
+        public BodyMetrics BodyMetrics
+        {
+            get
+            {
+                var b = new BodyMetrics();
+                var l = BodyMetrics.Instances.FindAll(x => x.PartyId == UniqueId);
+                b.AddRange(l);
+                return b;
+            }
+        }
 
         public DateTime DateOfBirth
         {

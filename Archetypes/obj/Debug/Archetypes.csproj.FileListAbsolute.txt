@@ -33,3 +33,10 @@ C:\Users\User\Documents\GitHub\OpenSolution\Archetypes\bin\Debug\Open.Aids.pdb
 C:\Users\User\Documents\GitHub\OpenSolution\Archetypes\obj\Debug\Archetypes.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\OpenSolution\Archetypes\obj\Debug\Open.Archetypes.dll
 C:\Users\User\Documents\GitHub\OpenSolution\Archetypes\obj\Debug\Open.Archetypes.pdb
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\bin\Debug\Open.Archetypes.dll
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\bin\Debug\Open.Archetypes.pdb
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\bin\Debug\Open.Aids.dll
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\bin\Debug\Open.Aids.pdb
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\obj\Debug\Archetypes.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\obj\Debug\Open.Archetypes.dll
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Archetypes\obj\Debug\Open.Archetypes.pdb

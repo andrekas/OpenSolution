@@ -17,3 +17,8 @@ C:\Users\Asus\Documents\Project\Aids\bin\Debug\Open.Aids.pdb
 C:\Users\Asus\Documents\Project\Aids\obj\Debug\Aids.csprojResolveAssemblyReference.cache
 C:\Users\Asus\Documents\Project\Aids\obj\Debug\Open.Aids.dll
 C:\Users\Asus\Documents\Project\Aids\obj\Debug\Open.Aids.pdb
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Aids\bin\Debug\Open.Aids.dll
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Aids\bin\Debug\Open.Aids.pdb
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Aids\obj\Debug\Aids.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Aids\obj\Debug\Open.Aids.dll
+C:\Users\Asus\Documents\TeamProject\OpenSolution\Aids\obj\Debug\Open.Aids.pdb

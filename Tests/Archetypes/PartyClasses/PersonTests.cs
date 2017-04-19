@@ -20,5 +20,14 @@ namespace Open.Tests.Archetypes.PartyClasses
             Assert.AreEqual(n.ToString(), Obj.GetName());
 
         }
+        //[TestMethod]
+        //public void GetEthnisityTest()
+        //{
+        //    var n = Ethnicity.Random();
+        //    n.EthnicityName = Obj.UniqueId;
+        //    Ethnicities.Instance.Add(n);
+        //    Assert.AreEqual(n.ToString(), Obj.GetP());
+
+        //}
     }
 }

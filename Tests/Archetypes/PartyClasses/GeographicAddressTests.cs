@@ -29,7 +29,7 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void ConstructorTest()
         {
             var a = new GeographicAddress().GetType().BaseType;
-            Assert.AreEqual(a, typeof(TemporalEntity));
+            Assert.AreEqual(a, typeof(Address));
         }
 
         [TestMethod]

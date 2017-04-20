@@ -75,3 +75,14 @@ C:\Users\Katjuska\Documents\GitHub\OpenSolution\Logic\bin\Debug\Open.Data.pdb
 C:\Users\Katjuska\Documents\GitHub\OpenSolution\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
 C:\Users\Katjuska\Documents\GitHub\OpenSolution\Logic\obj\Debug\Open.Logic.dll
 C:\Users\Katjuska\Documents\GitHub\OpenSolution\Logic\obj\Debug\Open.Logic.pdb
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Logic.dll
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Logic.pdb
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Aids.dll
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Archetypes.dll
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Data.dll
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Aids.pdb
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Archetypes.pdb
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\bin\Debug\Open.Data.pdb
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\obj\Debug\Open.Logic.dll
+C:\Users\Andre\Source\Repos\OpenSolution1\Logic\obj\Debug\Open.Logic.pdb

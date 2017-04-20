@@ -10,9 +10,9 @@
       <Property Name="Type" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="BodyMetrics" />
       <Property Name="Ethnicities" />
       <Property Name="PersonNames" />
+      <Property Name="BodyMetrics" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Open.Archetypes.PartyClasses.Party">
@@ -55,7 +55,7 @@
   <Class Name="Open.Archetypes.PartyClasses.EmailAddress" Collapsed="true">
     <Position X="7" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAIACAAAAAgAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>PartyClasses\EmailAddress.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -93,7 +93,7 @@
   <Class Name="Open.Archetypes.PartyClasses.BodyMetric" Collapsed="true">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQEAAAEBCAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAQEAAAEBCAAAAAgAAAAAAA=</HashCode>
       <FileName>PartyClasses\BodyMetric.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -109,6 +109,20 @@
     <TypeIdentifier>
       <HashCode>AIAGAAAIAgAAAAgEAAIUAAQCEAAEBggEBCAAAAAgAAA=</HashCode>
       <FileName>PartyClasses\PersonName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Archetypes.PartyClasses.Locale" Collapsed="true">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PartyClasses\Locale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Open.Archetypes.PartyClasses.ISOCountryCode" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PartyClasses\ISOCountryCode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

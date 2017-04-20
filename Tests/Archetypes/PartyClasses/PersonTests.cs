@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Open.Archetypes.PartyClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
@@ -24,7 +25,9 @@ namespace Open.Tests.Archetypes.PartyClasses
         [TestMethod]
         public void AddNameTest()
         {
+
         }
+
         [TestMethod]
         public void PersonNamesTest()
         {
@@ -39,6 +42,15 @@ namespace Open.Tests.Archetypes.PartyClasses
         public void GenderTest()
         {
            TestEnumProperty(()=>Obj.Gender, x=>Obj.Gender = x );
+        }
+
+        [TestMethod]
+        public void DateOfBirthTest()
+        {
+            TestProperty(
+                () => Obj.DateOfBirth, 
+                x => Obj.DateOfBirth = x,
+                DateTime.MinValue);
         }
 
         //[TestMethod]

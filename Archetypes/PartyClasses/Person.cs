@@ -6,7 +6,7 @@ namespace Open.Archetypes.PartyClasses
     public class Person : Party
     {
         private ISOGender gender;
-        //private DateTime dateOfBirth;
+        private DateTime dateOfBirth;
 
         //public PartyEthnicities Ethnicities => PartyEthnicities.GetPersonEthnicities(UniqueId);
 
@@ -30,11 +30,11 @@ namespace Open.Archetypes.PartyClasses
         //    }
         //}
 
-        //public DateTime DateOfBirth
-        //{
-        //    get { return SetDefault(ref dateOfBirth); }
-        //    set { SetValue(ref dateOfBirth, value); }
-        //}
+        public DateTime DateOfBirth
+        {
+            get { return SetDefault(ref dateOfBirth); }
+            set { SetValue(ref dateOfBirth, value); }
+        }
         public override string GetName()
         {
             return PersonName.ToString();

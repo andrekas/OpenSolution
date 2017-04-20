@@ -75,6 +75,14 @@
   </Class>
   <Class Name="Open.Archetypes.PartyClasses.WebpageAddress" Collapsed="true">
     <Position X="12.25" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Open.Archetypes.PartyClasses.Address" FixedFromPoint="true">
+      <Path>
+        <Point X="10.75" Y="2.441" />
+        <Point X="10.75" Y="2.875" />
+        <Point X="13" Y="2.875" />
+        <Point X="13" Y="3.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAIBAAACAAAAAAAAAA=</HashCode>
       <FileName>PartyClasses\WebpageAddress.cs</FileName>

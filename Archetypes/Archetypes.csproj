@@ -72,8 +72,11 @@
     <Compile Include="PartyClasses\Ethnicities.cs" />
     <Compile Include="PartyClasses\Ethnicity.cs" />
     <Compile Include="PartyClasses\GeographicAddress.cs" />
+    <Compile Include="PartyClasses\ISOCountryCode.cs" />
     <Compile Include="PartyClasses\ISOGender.cs" />
+    <Compile Include="PartyClasses\Locale.cs" />
     <Compile Include="PartyClasses\Organisation.cs" />
+    <Compile Include="PartyClasses\OrganisationName.cs" />
     <Compile Include="PartyClasses\OrganisationType.cs" />
     <Compile Include="PartyClasses\Party.cs" />
     <Compile Include="PartyClasses\PartyAuthentication.cs" />

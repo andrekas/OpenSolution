@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Open.Archetypes.PartyClasses;
 
 namespace Open.Tests.Archetypes.PartyClasses
@@ -10,16 +11,48 @@ namespace Open.Tests.Archetypes.PartyClasses
         {
             return Person.Random();
         }
-        [TestMethod] public void TypeTest() {
-            Assert.AreEqual(PartyType.Person, Obj.Type);
-        }
-        [TestMethod] public void GetNameTest() {
+        //[TestMethod] public void TypeTest() {
+        //    Assert.AreEqual(PartyType.Person, Obj.Type);
+        //}
+        [TestMethod]
+        public void GetNameTest()
+        {
             var n = PersonName.Random();
-            n.PersonId = Obj.UniqueId;
-            PersonNames.Instance.Add(n);
+            //TODO seda tegime
+            Obj.AddName(n);
             Assert.AreEqual(n.ToString(), Obj.GetName());
+        }
+        [TestMethod]
+        public void AddNameTest()
+        {
 
         }
+
+        [TestMethod]
+        public void PersonNamesTest()
+        {
+            Assert.Inconclusive();
+        }
+        [TestMethod]
+        public void PersonNameTest()
+        {
+            Assert.Inconclusive();
+        }
+        [TestMethod]
+        public void GenderTest()
+        {
+           TestEnumProperty(()=>Obj.Gender, x=>Obj.Gender = x );
+        }
+
+        [TestMethod]
+        public void DateOfBirthTest()
+        {
+            TestProperty(
+                () => Obj.DateOfBirth, 
+                x => Obj.DateOfBirth = x,
+                DateTime.MinValue);
+        }
+
         //[TestMethod]
         //public void GetEthnisityTest()
         //{

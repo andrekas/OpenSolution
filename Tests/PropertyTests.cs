@@ -63,6 +63,7 @@ namespace Open.Tests {
         public void TestEnumProperty<T>(Func<T> get, Action<T> set) {
             Assert.IsTrue(typeof(T).IsEnum);
             var s = Open.Aids.GetRandom.Enum<T>();
+            while (s.Equals(get())) s = Open.Aids.GetRandom.Enum<T>();
             Assert.AreNotEqual(s, get());
             set(s);
             Assert.AreEqual(s, get());

@@ -78,7 +78,8 @@ namespace Open.Archetypes.BaseClasses {
             return variable;
         }
         public string SetDefault(ref string variable) {
-            if (IsNull(variable)) SetValue(ref variable, string.Empty);
+            if (IsNull(variable))
+                SetValue(ref variable, string.Empty);
             return variable;
         }
         protected virtual void SetRandomValues() { }
